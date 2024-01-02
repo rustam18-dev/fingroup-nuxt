@@ -22,11 +22,11 @@ import img4 from '../assets/img/image 45 (1).png'
 import img5 from '../assets/img/Aslpharm.png'
 import img6 from '../assets/img/AslpharmColor.png'
 import {ref} from 'vue'
+
 const block = ref([
   { id: 1, img: img1, photo: img2, name: 'Проект по автоматизации отчетов НБТ Банка Эсхата выполняют высококвалифицированные специалисты FIN Gruop.', classblock: 'w-[473px] h-[409px] duration-500 flex flex-col mt-[100px] items-center  group relative overflow-hidden'},
   { id: 2, img: img3, photo: img4 , name: 'Успешно завершился проект по внедрению ПО в компанию "Молочная радость"', classblock: 'w-[473px] h-[409px] duration-500 flex flex-col mt-[100px] items-center  group border-x-[1px] border-mainG relative'},
   { id: 3, img: img5, photo: img6, name: 'Aslpharm.tj - сайт разработан на платформе 1С-Битрикс. Имеет интеграцию с учетной программой 1С-Розница', classblock: 'w-[473px] h-[409px] duration-500 flex flex-col mt-[100px] items-center  group relative'}
-
 ])
 </script>
 

@@ -7,8 +7,10 @@
       <Employees/>
     </div>
     <Industries/>
+    <project/>
     <partners/>
     <advantages/>
+    <OurAchievements/>
     <questions/>
   </div>
 </template>
@@ -16,6 +18,12 @@
 <script>
 </script>
 
-<style scoped>
-
+<style>
+::-webkit-scrollbar{
+  background: #000;
+}
+::-webkit-scrollbar-thumb{
+  background: #168CE4;
+  border-radius: 50px;
+}
 </style>

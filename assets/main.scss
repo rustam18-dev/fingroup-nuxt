@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main_title{
+  @apply text-mainB font-bold text-[60px] leading-[85px]
+}

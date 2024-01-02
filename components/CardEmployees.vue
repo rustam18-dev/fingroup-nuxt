@@ -1,11 +1,11 @@
 <template>
-  <div class="back flex items-end w-[690px] h-[350px] rounded-[20px] z-[50] cursor-pointer">
+  <div class="back flex items-end max-w-[690px] max-h-[350px] h-full rounded-[20px] z-[50] cursor-pointer">
     <div class="flex flex-col h-full items-start justify-between pt-[50px] pb-[30px] pl-[30px] relative">
       <h1 class="title">{{ title }}</h1>
       <span class="text">{{ jobTitle }}</span>
-      <button class="opacity-0 hover:duration-1000 duration-500 absolute bottom-10 uppercase text-white text-[12px] font-semibold w-[300px] h-[48px] text-center border border-mainB rounded-[10px] button">
-        Подробнее
-      </button>
+      <div class="absolute bottom-6 opacity-0 button duration-500">
+        <CustomButton class="text-[12px]">Подробнее</CustomButton>
+      </div>
       <div class="round duration-700"/>
       <div class="round2 duration-700"/>
     </div>
@@ -16,7 +16,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps(['jobTitle', 'title', 'img']);
 
@@ -40,9 +39,9 @@ const props = defineProps(['jobTitle', 'title', 'img']);
   transition-duration: 500ms;
 }
 .back:hover .text{
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
-.back:hover button{
+.back:hover .button{
   opacity: 1;
 }
 .round{
@@ -76,23 +75,5 @@ const props = defineProps(['jobTitle', 'title', 'img']);
 .back:hover .round2{
   top: 20px;
   right: 300px;
-}
-.button{
-  overflow: hidden;
-}
-.button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 100%; 
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  background: rgba(22, 140, 228, 0.20);
-  transition: left 0.3s ease;
-}
-
-.button:hover::before {
-  left: 0; 
 }
 </style>
