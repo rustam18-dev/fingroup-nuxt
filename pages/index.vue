@@ -7,6 +7,7 @@
       <Employees/>
     </div>
     <Industries/>
+    <project/>
     <partners/>
     <advantages/>
     <questions/>
