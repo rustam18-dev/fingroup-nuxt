@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
+
 
 const statistics = ref([
   {id:1, value: 50, adjective: 'доверенных', text: 'клиентов'},

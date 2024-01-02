@@ -1,0 +1,38 @@
+<template>
+  <p class="text-mainB text-[60px] font-bold leading-[85px] mt-[300px]">Наши преимущества</p>
+  <div class="flex flex-wrap justify-between ">
+
+    <div v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex">
+      <div class="mt-[100px]">
+        <component :is="item.component"/>
+      </div>
+      <div class="mt-[100px]">
+        <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px]">{{ item.title }}</p>
+        <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-[450px]">{{ item.name }}</p>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script setup>
+import Advantages from './Icons/Advantages.vue'
+import {ref} from 'vue'
+
+const block = ref([
+  {id: 1, component: Advantages, title: 'Разноплановость', name: 'Разработка любых сайтов — лэндинги, визитки, интернет-магазины, порталы, форумы, комплексные проекты', },
+  {id: 2, component: Advantages, title: 'Многозадачность', name: 'Мы оказываем полный спектр услуг — от создания сайтов и их продвижения до технической поддержки'},
+  {id: 3, component: Advantages, title: 'Индивидуальный подход', name: 'Максимальное внимание к деталям и пожеланиям клиента, изучение бизнес-контекста каждого конкретного проекта'},
+  {id: 4, component: Advantages, title: 'Команда', name: 'Над каждым проектом работает команда профессионалов различного профиля: копирайтеры, дизайнеры и др.'},
+  {id: 5, component: Advantages, title: 'Доступность', name: 'Гибкая ценовая политика компании предусматривает скидки, удобный вариант оплаты для каждого клиента'},
+  {id: 6, component: Advantages, title: 'Результативность', name: 'Мы всегда добиваемся полного решения поставленных задач. За нашими плечами большой опыт и настоящие профи'},
+  {id: 6, component: Advantages, title: 'Эффективность', name: 'Комплексное и только «белое» SEO-продвижение, SMM, рекламные кампании Яндекс Директ и Google Adwords'},
+  {id: 6, component: Advantages, title: 'Профессионализм', name: 'Мы создаем красивые сайты с современным дизайном и изящными анимациями, наполняем их качественным контентом'}
+])
+</script>
+
+<style scoped>
+  #name_6{
+    width: 500px;
+  }
+</style>
