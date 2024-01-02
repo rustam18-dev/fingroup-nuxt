@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mt-[189px] mb-[125px]">
+  <div class="flex flex-col mt-[189px]">
     <div class="flex flex-col gap-[40px] mb-[64px]">
       <h2 class="main_title">Наши сотрудники</h2>
       <span class="text">Команда профессионалов</span>

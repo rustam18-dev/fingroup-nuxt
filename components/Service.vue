@@ -1,15 +1,15 @@
 <template>
-  <div class="mt-[100px]">
+  <div class="mt-[124px]">
     <div>
       <p class="text-mainB text-[60px] font-bold leading-[85px]">Услуги</p>
       <p class="text-mainG text-[26px] font-normal leading-[40px] mt-[40px]">Компания Fin Group оказывает услуги</p>
     </div>
-    <div class="flex flex-wrap justify-between mx-auto items-start h-[740px] rounded-[20px] bg-[#242424] mt-[50px]">
+    <div class="flex flex-wrap justify-between mx-auto items-start h-[740px] rounded-[20px] bg-[#242424] mt-[50px] relative">
 
       <div :class="item.classBlock" v-for="item of block" :key="item">
         <component :is="item.component"/>
         <p class="text-[26px] text-[#929292] font-normal text-center mx-auto w-[299px] group-hover:text-[22px] group-hover:mt-[20px] duration-500 group-hover:w-[260px] ">{{ item.name }}</p>
-        <button class="border-[1.5px] border-mainB rounded-[10px] w-[90%] h-[48px] text-[#fff] absolute bottom-3 opacity-0 group-hover:opacity-[1] duration-500">Подробнее</button>
+        <custom-button class="absolute -bottom-2 group-hover:-bottom-8 opacity-0 group-hover:opacity-[1] duration-500">Подробнее</custom-button>
       </div>
 
     </div>
