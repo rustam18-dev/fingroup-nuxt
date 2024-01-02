@@ -14,6 +14,7 @@
       <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] mr-[10px] ">Оставить заявку</button>
     </div>
   </div>
+  
 </template>
 
 <script>
