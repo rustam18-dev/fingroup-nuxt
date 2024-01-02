@@ -3,9 +3,7 @@
     <div class="flex flex-col h-full items-start justify-between pt-[50px] pb-[30px] pl-[30px] relative">
       <h1 class="title">{{ title }}</h1>
       <span class="text">{{ jobTitle }}</span>
-      <button class="opacity-0 hover:duration-1000 duration-500 absolute bottom-10 uppercase text-white text-[12px] font-semibold w-[300px] h-[48px] text-center border border-mainB rounded-[10px] button">
-        Подробнее
-      </button>
+      <CustomButton>Подробнее</CustomButton>
       <div class="round duration-700"/>
       <div class="round2 duration-700"/>
     </div>
@@ -16,7 +14,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps(['jobTitle', 'title', 'img']);
 
@@ -76,23 +73,5 @@ const props = defineProps(['jobTitle', 'title', 'img']);
 .back:hover .round2{
   top: 20px;
   right: 300px;
-}
-.button{
-  overflow: hidden;
-}
-.button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 100%; 
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  background: rgba(22, 140, 228, 0.20);
-  transition: left 0.3s ease;
-}
-
-.button:hover::before {
-  left: 0; 
 }
 </style>
