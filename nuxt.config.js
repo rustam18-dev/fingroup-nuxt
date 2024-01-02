@@ -3,7 +3,7 @@ import { resolve } from 'path'
 
 export default defineNuxtConfig({
   modules: ['nuxt-svgo'],
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   alias: {
     "@": resolve(__dirname, '/'),
   },
