@@ -7,6 +7,7 @@
       <div class="w-full mt-[40px]">
         <p class="text-mainG text-[25px] text-left linear-[40px]">Определив основные объекты диагностики, связываем финансовую диагностику с общим диагностическим процессом.</p>
       </div>
+      <custom-button theme="light" class="mt-[43px]"><span class="px-[24px]">Подробнее</span></custom-button>
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden flex ">
       <div class="w-[50%] flex flex-col justify-center items-center  top-block">
@@ -17,6 +18,7 @@
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
       </div>
+      
       <div class="w-[50%] flex flex-col justify-center mt-24 items-center bottom-block">
         <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/4.png" alt="">
