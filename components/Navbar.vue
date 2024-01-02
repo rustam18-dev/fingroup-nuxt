@@ -37,35 +37,48 @@
 <style scoped>
 .top-block {
   transition: all 2s;
-  animation: top-block 4s infinite;
+  animation: top-block 12s infinite forwards;
 }
 
 .bottom-block {
   transition: all 2s;
-  animation: bottom-block 4s infinite;
+  animation: bottom-block 12s infinite forwards;
 }
 
 @keyframes top-block {
   0% {
-    transform: translate3d(0px, -200px, 0px);
+    transform: translate3d(0px, -400px, 0px);
   }
-  50% {
+  18% {
     transform: translate3d(0px, 200px, 0px);
   }
-  75%, 100% {
+  30%, 50% {
     transform: translate3d(0px, -200px, 0px);
+  }
+  68% {
+    transform: translate3d(0px, -600px, 0px);
+  }
+  90%, 100% {
+    transform: translate3d(0, 200px, 0px);
   }
 }
 
 @keyframes bottom-block {
   0% {
-    transform: translate3d(0px, 200px, 0px);
+    transform: translate3d(0px, 400px, 0px);
   }
-  50% {
+  18% {
     transform: translate3d(0px, -200px, 0px);
   }
-  75%, 100% {
+  30%, 50% {
     transform: translate3d(0px, 200px, 0px);
   }
+  68% {
+    transform: translate3d(0px, 600px, 0px);
+  }
+  90%, 100% {
+    transform: translate3d(0, -200px, 0px);
+  }
 }
+
 </style>
