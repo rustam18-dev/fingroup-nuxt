@@ -1,9 +1,11 @@
 <template>
-  <div class="back flex items-end w-[690px] h-[350px] rounded-[20px] z-[50] cursor-pointer">
+  <div class="back flex items-end max-w-[690px] max-h-[350px] h-full rounded-[20px] z-[50] cursor-pointer">
     <div class="flex flex-col h-full items-start justify-between pt-[50px] pb-[30px] pl-[30px] relative">
       <h1 class="title">{{ title }}</h1>
       <span class="text">{{ jobTitle }}</span>
-      <CustomButton>Подробнее</CustomButton>
+      <div class="absolute bottom-6 opacity-0 button duration-500">
+        <CustomButton class="text-[12px]">Подробнее</CustomButton>
+      </div>
       <div class="round duration-700"/>
       <div class="round2 duration-700"/>
     </div>
@@ -37,9 +39,9 @@ const props = defineProps(['jobTitle', 'title', 'img']);
   transition-duration: 500ms;
 }
 .back:hover .text{
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
-.back:hover button{
+.back:hover .button{
   opacity: 1;
 }
 .round{
