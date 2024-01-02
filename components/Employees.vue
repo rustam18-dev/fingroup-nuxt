@@ -30,9 +30,6 @@ const employeesInfo = ref([
 </script>
 
 <style scoped>
-.main_title{
-  @apply text-mainB font-bold text-[60px] leading-[85px]
-}
 .text{
   @apply text-mainG text-[26px] leading-[40px] 
 }
