@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-[125px]">
     <h2 class="main_title">Наши достижения</h2>
     <div class="flex w-full gap-[75px] mt-[65px] mb-[125px]">
       <div v-for="achievement in achievements" :key="achievement.id" class="back cursor-pointer rounded-[15px]">

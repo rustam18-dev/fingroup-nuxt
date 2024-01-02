@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import AppBolt from '~/assets/img/ServicesIcons/AppBolt.vue';
+import SetingIcon from '~/assets/img/ServicesIcons/SetingIcon.vue';
 import GameIconVue from '~/assets/img/ServicesIcons/GameIcon.vue';
 import MeterialSymbolsVue from '~/assets/img/ServicesIcons/MeterialSymbols.vue';
 import MaterialIconVue from '../assets/img/ServicesIcons/MaterialIcon.vue'
@@ -26,7 +26,7 @@ import HealthIconVue from '~/assets/img/ServicesIcons/HealthIcon.vue';
 import {ref} from 'vue'
 
 const block = ref([
-  {id: 1, component: AppBolt, name: 'Автоматизация бизнес процессов', classBlock: 'w-[381px] ml-[80px] mt-[69px] h-[284px] group rounded-[10px] border border-mainG bg-[#242424] flex flex-col justify-center items-center relative'},
+  {id: 1, component: SetingIcon, name: 'Автоматизация бизнес процессов', classBlock: 'w-[381px] ml-[80px] mt-[69px] h-[284px] group rounded-[10px] border border-mainG bg-[#242424] flex flex-col justify-center items-center relative'},
   {id: 2, component: GameIconVue, name: 'Стандартизация бизнес процессов', classBlock: 'w-[381px] h-[284px] mt-[69px] rounded-[10px] border border-mainG bg-[#242424] group flex flex-col justify-center items-center relative'},
   {id: 3, component: MeterialSymbolsVue, name: 'Финансовая диагностика и консультация', classBlock: 'w-[381px] mr-[80px] mt-[69px] h-[284px] rounded-[10px] border border-mainG bg-[#242424] group flex flex-col justify-center items-center relative'},
   {id: 4, component: MaterialIconVue, name: 'Создание сайтов по доступным ценам', classBlock: 'w-[381px] h-[284px] mb-0 ml-[21%] rounded-[10px] border border-mainG bg-[#242424] group flex flex-col justify-center items-center relative'},

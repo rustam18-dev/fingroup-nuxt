@@ -7,9 +7,10 @@
       <Employees/>
     </div>
     <Industries/>
-    <OurAchievements/>
+    <project/>
     <partners/>
     <advantages/>
+    <OurAchievements/>
     <questions/>
   </div>
 </template>

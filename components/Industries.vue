@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-[125px]">
     <div>
       <h2 class="main_title">Отрасли и немного статистики</h2>
       <p class="text-mainG text-[26px] font-normal ml-[10px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
