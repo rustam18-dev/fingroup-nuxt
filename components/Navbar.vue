@@ -1,8 +1,12 @@
 <template>
   <div class="text-white flex">
     <div class="w-[60%] min-h-[800px] px-[20px]">
-      <div class="w-[570px] mt-[220px] linear-[85px] text-[60px]">
-        <p><span class="text-mainB">Финансовая</span> диагностика и консультация</p>
+      <div class="w-[580px] mt-[220px] linear-[85px] text-[60px]">
+        <div class="uppercase font-[700] h-[270px] overflow-hidden ">
+          <p class="navbar_title"><span class="text-mainB">Финансовая</span> диагностика и консультация</p>
+          <p class="navbar_title">Автоматизация <span class="text-mainB">бизнес - процессов</span></p>
+          <p class="navbar_title">Создание <span class="text-mainB">креативных</span> сайтов</p>
+        </div>
       </div>
       <div class="w-full mt-[40px]">
         <p class="text-mainG text-[25px] text-left linear-[40px]">Определив основные объекты диагностики, связываем финансовую диагностику с общим диагностическим процессом.</p>
@@ -18,7 +22,7 @@
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
       </div>
-      
+
       <div class="w-[50%] flex flex-col justify-center mt-24 items-center bottom-block">
         <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/4.png" alt="">
@@ -36,6 +40,13 @@
 </script>
 
 <style scoped>
+
+.navbar_title {
+  transition: all 2s;
+  animation: navbar_title 12s infinite forwards;
+}
+
+
 .top-block {
   transition: all 2s;
   animation: top-block 12s infinite forwards;
@@ -63,7 +74,6 @@
     transform: translate3d(0, 200px, 0px);
   }
 }
-
 @keyframes bottom-block {
   0% {
     transform: translate3d(0px, 400px, 0px);
@@ -82,4 +92,21 @@
   }
 }
 
+@keyframes navbar_title {
+  0%, 33% {
+    transform: translate(0px, 0%);
+  }
+
+  33% {
+    transform: translate(0px, -100%);
+  }
+
+  66% {
+    transform: translate(0px, -200%);
+  }
+
+  100% {
+    transform: translate(0px, 0%);
+  }
+}
 </style>

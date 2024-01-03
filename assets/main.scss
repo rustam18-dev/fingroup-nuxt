@@ -5,3 +5,9 @@
 .main_title{
   @apply text-mainB font-bold text-[60px] leading-[85px]
 }
+
+@layer base {
+  body {
+    font-family: Montserrat, sans-serif;
+  }
+}
