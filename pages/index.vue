@@ -12,6 +12,7 @@
     <advantages/>
     <OurAchievements/>
     <questions/>
+    <Footer/>
   </div>
 </template>
 
