@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-wrap justify-between mx-auto items-start h-[740px] rounded-[20px] bg-[#242424] mt-[50px] relative">
 
-      <div :class="item.classBlock" v-for="item of block" :key="item">
+      <div class="block_shadow"  :class="item.classBlock" v-for="item of block" :key="item">
         <div v-html="item.svg"></div>
         <p class="text-[26px] text-[#929292] font-normal text-center mx-auto w-[299px] group-hover:text-[22px] group-hover:mt-[20px] duration-500 group-hover:w-[260px] ">{{ item.name }}</p>
         <custom-button class="absolute -bottom-2 group-hover:-bottom-8 opacity-0 group-hover:opacity-[1] duration-500">Подробнее</custom-button>
@@ -29,6 +29,8 @@ const block = ref([
 ])
 </script>
 
-<style>
-
+<style scoped>
+  .block_shadow:hover{
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.25);
+  }
 </style>

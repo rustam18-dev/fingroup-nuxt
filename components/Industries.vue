@@ -5,7 +5,7 @@
       <p class="text-mainG text-[26px] font-normal ml-[10px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
     </div>
 
-    <div class="flex justify-center gap-[40px] mx-[10px] mt-[70px]">
+    <div class="flex justify-center gap-[40px] mx-[10px] mt-[70px] cursor-pointer">
 
       <div v-for="statistic in statistics" :key="statistic.id" class="flex flex-col justify-center items-center w-[325px] h-[325px] rounded-[15px] bg-[#2C2C2C]">
         <p class="text-mainB text-[120px] font-semibold leading-[85px]">{{ statistic.value }} <span v-if="statistic.id === 1" class="text-mainG -ml-[40px]">+</span></p>
