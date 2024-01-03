@@ -3,11 +3,13 @@
     <p class="text-mainB text-[60px] font-bold leading-[85px] pt-[56px] pl-[82px]">Наши проекты</p>
     <div class="flex">
 
-      <div :class="item.classblock" v-for="item of block" :key="item">
+      <div :class="item.classblock" v-for="item of block" :key="item" class="relative">
         <img :id="'img_' + item.id" class="absolute transition duration-1000 ease-in-out group-hover:opacity-0 group-hover:invisible" :src="item.img" alt="photo">
         <img :id="'photo_' + item.id" class="absolute object-cover transition duration-1000 opacity-0 invisible group-hover:opacity-100 group-hover:visible" :src="item.photo" alt="photo">
         <p class="text-mainG duration-500 text-[24px] font-normal leading-[40px] text-center w-[400px] group-hover:mt-[150px] mt-[235px]">{{ item.name }}</p>
-        <button class="rounded-[10px] border-[1.5px] border-mainB w-[70%] h-[48px] text-[#fff] bottom-4 opacity-0 absolute group-hover:opacity-[1] group-hover:block duration-700">Подробнее</button>
+        <div class="w-[70%] h-[48px] text-[#fff] flex justify-center items-center bottom-4 opacity-0 absolute group-hover:opacity-[1] duration-700">
+          <custom-button>Подробнее</custom-button>
+        </div>
       </div>
 
     </div>
