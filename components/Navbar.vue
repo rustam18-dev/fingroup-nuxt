@@ -38,26 +38,6 @@
 </template>
 
 <script setup>
-const { $anime } = useNuxtApp()
-
-onMounted(() => {
-  const textWrapper = document.querySelector('.text');
-  textWrapper.innerHTML = textWrapper.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-  );
-
-  $anime.timeline({ loop: false })
-      .add({
-        targets: '.text .letter',
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: 'easeOutExpo',
-        duration: 350,
-        delay: (el, i) => 20 * i,
-      })
-})
 
 </script>
 
