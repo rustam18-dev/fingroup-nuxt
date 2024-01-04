@@ -1,5 +1,5 @@
 <template>
-  <button :class="classes" v-bind="$attrs" class="button">
+  <button :class="classes" v-bind="$attrs" class="button z-[30]">
     <span class="btn1"></span>
     <span class="btn2"></span>
     <slot></slot>

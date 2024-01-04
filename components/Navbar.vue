@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white flex">
+  <div class="text-white flex z-50">
     <div class="w-[60%] min-h-[800px] px-[20px]">
       <div class="w-[580px] mt-[220px] linear-[85px] text-[60px]">
         <div class="uppercase font-[700] h-[270px] overflow-hidden ">
