@@ -2,7 +2,9 @@ import { resolve } from 'path'
 
 export default defineNuxtConfig({
   modules: [
-    ['@nuxtjs/google-fonts', {
+    [
+      '@hypernym/nuxt-anime',
+      '@nuxtjs/google-fonts', {
       families: {
         Montserrat: true,
         Inter: [400, 700],
