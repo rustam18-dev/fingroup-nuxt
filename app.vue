@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center items-center bg-[#1A1A1A]">
-    <div class=" max-w-[1440px] w-full">
+  <div class="flex flex-col justify-center items-center bg-[#1A1A1A] overflow-hidden">
+    <div>
       <NuxtLayout>
-        <NuxtPage></NuxtPage>
+        <NuxtPage/>
       </NuxtLayout>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white flex">
+  <div class="text-white flex z-50">
     <div class="w-[60%] min-h-[800px] px-[20px]">
       <div class="w-[580px] mt-[220px] linear-[85px] text-[60px]">
         <div class="uppercase font-[700] h-[270px] overflow-hidden ">
@@ -16,7 +16,7 @@
       <custom-button theme="light" class="mt-[43px]"><span class="px-[24px]">Подробнее</span></custom-button>
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden flex ">
-      <div class="w-[50%] flex flex-col justify-center items-center top-block">
+      <div class="w-[50%] flex flex-col justify-center items-center top-block z-10">
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/2.png" alt="">
@@ -25,7 +25,7 @@
         <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
       </div>
 
-      <div class="w-[50%] flex flex-col justify-center mt-24 items-center bottom-block">
+      <div class="w-[50%] flex flex-col justify-center mt-24 items-center bottom-block z-10">
         <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/4.png" alt="">
         <img class="mb-6" src="../assets/img_navbar/5.png" alt="">
