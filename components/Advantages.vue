@@ -1,5 +1,5 @@
 <template>
-  <p class="text-mainB text-[60px] font-bold leading-[85px] mt-[300px]">Наши преимущества</p>
+  <p class="text-mainB text-[60px] font-bold leading-[85px] mt-[200px]">Наши преимущества</p>
   <div class="flex flex-wrap justify-between ">
 
     <div  v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer">
@@ -32,8 +32,11 @@ const block = ref([
 </script>
 
 <style scoped>
-  #name_6,#name_7,#name_8{
-    width: 500px;
+  #name_1,#name_2,#name_3,#name_4,#name_5,#name_6,#name_7{
+    width: 550px;
+  }
+  #name_8{
+    width: 600px;
   }
   
 </style>
