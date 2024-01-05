@@ -7,9 +7,9 @@
 
     <div class="flex justify-center gap-[40px] mx-[10px] mt-[70px] cursor-pointer">
 
-      <div v-for="statistic in statistics" :key="statistic.id" class="flex flex-col justify-center items-center w-[325px] h-[325px] rounded-[15px] bg-[#2C2C2C]">
-        <p class="text-mainB text-[120px] font-semibold leading-[85px]">{{ statistic.value }} <span v-if="statistic.id === 1" class="text-mainG -ml-[40px]">+</span></p>
-        <p class="text-mainG text-[40px] font-normal leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
+      <div v-for="statistic in statistics" :key="statistic.id" class="flex flex-col justify-center items-center w-[325px] h-[350px] rounded-[15px] bg-[#2C2C2C]">
+        <p class="text-mainB text-[95px] font-semibold leading-[85px]">{{ statistic.value }} <span v-if="statistic.id === 1" class="text-mainG -ml-[30px]">+</span></p>
+        <p class="text-mainG text-[35px] font-normal leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
       </div>
 
     </div>
