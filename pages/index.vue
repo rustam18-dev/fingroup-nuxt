@@ -25,18 +25,36 @@ useHead({
       </div>
       <div class="absolute top-0 -right-[480px] slider_shadow" />
       <div class="absolute top-[280px] -right-[600px] shape" />
-      <div class="absolute top-[1280px] -left-52 star" />
-      <div class="absolute top-[1780px] -right-[500px] abstrack_shape" />
-      <div class="absolute top-[2000px] -right-[400px] abstrack_shape_shadow" />
+      <div class="absolute top-[1265px] -left-[400px] star" />
       <!-- Back_objects -->
-
+      
       <Service/>    
-      <Employees/>
-      <Industries/>
-      <project/>
-      <partners/>
+      <div class="relative">
+        <Employees/>
+        <div class="absolute -top-72 -right-[500px] abstrack_shape" />
+        <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
+        <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
+      </div>
+
+      <div class="relative">
+        <Industries/>
+        <img src="../assets/back_img/div.tn-atom.png"  class="absolute atom -top-10 -right-64" alt="">
+        <div class="absolute atom_shadow top-16 -right-[155px]" />
+      </div>
+
+      <div class="relative">
+        <project/>
+        <div class="absolute -bottom-44 -left-[1070px] Cube_effect" />
+        <div class="absolute bottom-16 -left-[570px] Cube_effect_shadow" />
+      </div>
+
+      <div class="relative">
+        <partners/>
+        <div class="arrow absolute" />
+      </div>
       <advantages/>
       <OurAchievements/>
+      
       <questions/>
   </div>
 </template>
@@ -77,8 +95,8 @@ useHead({
 .star{
   width: 784.683px;
   height: 1039.507px; 
-  opacity: 0.2;
-  background: url('../assets/back_img/Star.png');
+  /* opacity: 0.2; */
+  background: url('../assets/back_img/star1.png');
 }
 .abstrack_shape{
   width: 1468px;
@@ -88,10 +106,72 @@ useHead({
 .abstrack_shape_shadow{
   width: 643px;
   height: 643px;
-  border-radius: 3000px;
-  opacity: 0.07;
+  border-radius: 50%;
+  opacity: 0.19;
   background: #168CE4;
-  filter: blur(50px);
+  filter: blur(70.55000305175781px);
+}
+.abstrack_shape_shadow2{
+  width: 643px;
+  height: 643px;
+  border-radius: 3000px;
+  opacity: 0.05;
+  background: #168CE4;
+  filter: blur(70.55000305175781px);
+}
+.atom{
+  opacity: 0.3;
+  animation: rotate infinite linear 20s
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.atom_shadow{
+  width: 386px;
+  height: 386px;
+  flex-shrink: 0;
+  border-radius: 3000px;
+  opacity: 0.05;
+  background: #168CE4;
+  filter: blur(70.55000305175781px);
+}
+.Cube_effect{
+  width: 1277.385px;
+  height: 1277.385px;
+  background: url('../assets/back_img/Cube_effect.png');
+}
+.Cube_effect_shadow{
+  width: 643px;
+  height: 643px;
+  border-radius: 3000px;
+  opacity: 0.05;
+  background: #168CE4;
+  filter: blur(70.55000305175781px);
+}
+.arrow{
+  width: 368px;
+  height: 450px;
+  background: url('../assets/back_img/arrow.png');
+  animation: arrow linear 2.5s infinite;
+}
+@keyframes arrow {
+  0%{
+    bottom: 460px;
+    right: -180px;
+  }
+  50%{
+    bottom: 400px;
+    right: -100px;
+  }
+  100%{
+    bottom: 460px;
+    right: -180px;
+  }
 }
 img{
   user-select: none;
