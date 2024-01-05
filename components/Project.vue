@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#242424] mt-[125px] mx-[10px] rounded-[20px] h-[663px]">
-    <p class="text-mainB text-[60px] font-bold leading-[85px] pt-[56px] pl-[82px]">Наши проекты</p>
+  <div class="bg-[#242424] mt-[125px] mx-[10px] rounded-[20px] h-[663px] w-full relative z-50">
+    <h2 class="text-mainB text-[60px] font-bold leading-[85px] pt-[56px] pl-[82px]">Наши проекты</h2>
     <div class="flex">
 
       <div :class="item.classblock" v-for="item of block" :key="item" class="relative">
