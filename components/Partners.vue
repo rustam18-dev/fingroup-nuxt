@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col flex-wrap mt-[225px]">
+  <div class="flex flex-col flex-wrap mt-[225px] relative z-10">
     <div>
       <h1 class="text-[65px] text-mainB font-bold ">Наши партнеры</h1>
       <h3 class="text-mainG text-[26px] font-normal mt-[40px] mb-[100px]">Мы работаем только с известными проверенными брендами</h3>

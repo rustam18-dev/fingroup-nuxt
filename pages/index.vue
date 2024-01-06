@@ -51,8 +51,15 @@ useHead({
       <div class="relative">
         <partners/>
         <div class="arrow absolute" />
+        <div class="noroot absolute -left-[700px] -bottom-72" />
+        <div class="absolute -bottom-80  -left-[600px]  abstrack_shape_shadow2" />
       </div>
-      <advantages/>
+      
+      <div class="relative">
+        <advantages/>
+        <!-- <div class="abstract" /> -->
+      </div>
+
       <OurAchievements/>
       
       <questions/>
@@ -177,6 +184,16 @@ useHead({
     bottom: 460px;
     right: -180px;
   }
+}
+.noroot{
+  width: 1071px;
+  height: 387px;
+  background: url('../assets/back_img/noroot.png');
+}
+.abstract{
+  width: 765px;
+  height: 849px;
+  background: url('../assets/back_img/abstract.png') no-repeat;
 }
 img{
   user-select: none;
