@@ -95,9 +95,14 @@ useHead({
 .star{
   width: 784.683px;
   height: 1039.507px; 
-  /* opacity: 0.2; */
+  transition: transform;
+  transition-duration: 700ms;
   background: url('../assets/back_img/star1.png');
 }
+/* .star:hover{
+  transform: rotate(90deg), translateY(100px);
+  transform: translateY(50px);
+} */
 .abstrack_shape{
   width: 1468px;
   height: 1268px;

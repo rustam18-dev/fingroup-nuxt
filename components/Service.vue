@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[10px] mt-[124px]">
+  <div class="px-[10px] mt-[124px] relative z-10">
     <div class="flex flex-col mb-[50px]">
       <h1 class="text-mainB text-[60px] font-bold">Услуги</h1>
       <h4 class="text-mainG text-[26px]">Компания Fin Group оказывает услуги</h4>
@@ -8,7 +8,9 @@
       <div v-for="item of block" :key="item" class="flex flex-col w-[365px] h-[280px] border border-mainG rounded-[10px] group relative gap-[30px]">
         <div v-html="item.svg"></div>
         <p class="text-mainG text-[26px] font-normal text-center group-hover:-mt-[25px]">{{ item.name }}</p>
-        <button class="h-[48px] w-[85%] text-center border-[1.5px] duration-500 border-mainB rounded-[10px] absolute bottom-4 left-[26px] text-[#fff] text-[12px] font-semibold opacity-0 group-hover:opacity-[1]">Подробнее</button>
+        <div class="duration-700 border-mainB rounded-[10px] absolute bottom-4 left-[26px] text-[#fff] text-[12px] font-semibold opacity-0 group-hover:opacity-[1]">
+         <custom-button>Подробнее</custom-button> 
+        </div>
       </div>
     </div>
   </div>
