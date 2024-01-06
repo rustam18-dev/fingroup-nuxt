@@ -1,17 +1,22 @@
 <template>
-  <p class="text-mainB text-[60px] font-bold leading-[85px] mt-[200px]">Наши преимущества</p>
-  <div class="flex flex-wrap justify-between ">
+  <div class="relative z-10 mt-[245px]">
+    <h3 class="text-mainB text-[60px] font-bold leading-[85px] relative">
+      Наши преимущества
+      <div class="title_shadow absolute -top-10 -left-10 -z-10" />
+    </h3>
+    <div class="flex flex-wrap justify-between ">
 
-    <div  v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer">
-      <div class="mt-[100px]">
-        <component :is="item.component"/>
+      <div  v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer">
+        <div class="mt-[100px]">
+          <component :is="item.component"/>
+        </div>
+        <div class="mt-[100px]">
+          <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px]">{{ item.title }}</p>
+          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-[450px]">{{ item.name }}</p>
+        </div>
       </div>
-      <div class="mt-[100px]">
-        <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px]">{{ item.title }}</p>
-        <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-[450px]">{{ item.name }}</p>
-      </div>
+
     </div>
-
   </div>
 </template>
 
@@ -38,5 +43,12 @@ const block = ref([
   #name_8{
     width: 600px;
   }
-  
+  .title_shadow{
+    border-radius: 3000px;
+    opacity: 0.05;
+    background: #168CE4;
+    filter: blur(70.55000305175781px);
+    width: 778px;
+    height: 181px;
+  }
 </style>
