@@ -21,7 +21,12 @@ export default defineNuxtConfig({
         }
       }
     }],
+    '@nuxt/image',
   ],
+  image: {
+    format: ['webp'],
+    dir: 'assets'
+  },
   alias: {
     "@": resolve(__dirname, '/'),
   },
