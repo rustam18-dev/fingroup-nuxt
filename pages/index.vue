@@ -51,18 +51,32 @@ useHead({
       <div class="relative">
         <partners/>
         <div class="arrow absolute" />
-        <div class="noroot absolute -left-[700px] -bottom-72" />
-        <div class="absolute -bottom-80  -left-[600px]  abstrack_shape_shadow2" />
+        <div class="noroot absolute -left-[600px] -bottom-72" />
+        <div class="absolute -bottom-64 -left-[400px]  abstrack_shape_shadow2" />
+        <div class="absolute -bottom-80 -right-[400px]  abstrack_shape_shadow2" />
+
       </div>
       
       <div class="relative">
         <advantages/>
-        <!-- <div class="abstract" /> -->
+        <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
+        <img src="../assets/back_img/round_shape.png" class="absolute -bottom-32 -left-[320px]" />
+        <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
+        <div class="abstract absolute bottom-0 -right-[450px]" />
+        <div class="abstrack_shadow absolute bottom-20 -right-[400px]" />
+        <div class="abstrack_shadow absolute -bottom-[600px] -right-[400px]" />
       </div>
 
-      <OurAchievements/>
+      <div class="relative">
+        <OurAchievements/>
+        <img src="../assets/back_img/div.tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
+        <div class="atom_shadow absolute -bottom-20 right-40" />
+      </div>
       
-      <questions/>
+      <div class="relative">
+        <questions/>
+        <img src="../assets/back_img/dot.png" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2]"/>
+      </div>
   </div>
 </template>
 
@@ -84,7 +98,7 @@ useHead({
   border-radius: 3000px;
   opacity: 0.04;
   background: #168CE4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
 }
 .slider_shadow{
   border-radius: 3000px;
@@ -121,18 +135,17 @@ useHead({
   border-radius: 50%;
   opacity: 0.19;
   background: #168CE4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
 }
 .abstrack_shape_shadow2{
   width: 643px;
   height: 643px;
   border-radius: 3000px;
-  opacity: 0.05;
+  opacity: 0.04;
   background: #168CE4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
 }
 .atom{
-  opacity: 0.3;
   animation: rotate infinite linear 20s
 }
 @keyframes rotate {
@@ -150,7 +163,7 @@ useHead({
   border-radius: 3000px;
   opacity: 0.05;
   background: #168CE4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
 }
 .Cube_effect{
   width: 1277.385px;
@@ -163,7 +176,7 @@ useHead({
   border-radius: 3000px;
   opacity: 0.05;
   background: #168CE4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
 }
 .arrow{
   width: 368px;
@@ -194,6 +207,23 @@ useHead({
   width: 765px;
   height: 849px;
   background: url('../assets/back_img/abstract.png') no-repeat;
+}
+.abstrack_shadow{
+  width: 643px;
+  height: 643px;
+  border-radius: 3000px;
+  opacity: 0.03;
+  background: #168CE4;
+  filter: blur(70px);
+}
+.gray_shadow{
+  width: 653.106px;
+  height: 472.849px;
+  transform: rotate(135deg);
+  border-radius: 3000px;
+  opacity: 0.03;
+  background: #FFF;
+  filter: blur(70px);
 }
 img{
   user-select: none;
