@@ -12,11 +12,12 @@
           <li class="header_text">Продукты</li>
           <li class="header_text mr-[50px]">Контакты</li>
         </ol>
-        <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] mr-[10px] ">Оставить заявку</button>
+        <button
+          class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] mr-[10px] ">Оставить
+          заявку</button>
       </div>
     </div>
   </div>
-  
 </template>
 
 <script>
@@ -27,6 +28,6 @@ export default {
 
 <style scoped>
 .header_text {
-    @apply text-[18px] text-[#666] font-normal cursor-pointer hover:text-[#168CE4]
+  @apply text-[18px] text-[#666] font-normal cursor-pointer hover:text-[#168CE4]
 }
 </style>

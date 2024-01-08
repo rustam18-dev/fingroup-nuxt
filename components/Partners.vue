@@ -2,7 +2,8 @@
   <div class="flex flex-col flex-wrap mt-[225px] relative z-10">
     <div>
       <h1 class="text-[65px] text-mainB font-bold ">Наши партнеры</h1>
-      <h3 class="text-mainG text-[26px] font-normal mt-[40px] mb-[100px]">Мы работаем только с известными проверенными брендами</h3>
+      <h3 class="text-mainG text-[26px] font-normal mt-[40px] mb-[100px]">Мы работаем только с известными проверенными
+        брендами</h3>
     </div>
     <div class="flex h-[353px] bg-[#242424] rounded-[20px] gap-10 justify-center items-center">
       <img class="partners_img" src="../assets/img/img_partners/1c.png" alt="photo">
@@ -21,7 +22,7 @@
 </script>
 
 <style scoped>
-  .partners_img{
-    @apply max-w-[300px] max-h-[250px] grayscale hover:grayscale-0 duration-300
-  }
+.partners_img {
+  @apply max-w-[300px] max-h-[250px] grayscale hover:grayscale-0 duration-300
+}
 </style>

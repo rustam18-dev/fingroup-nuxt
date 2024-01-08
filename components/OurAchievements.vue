@@ -16,10 +16,10 @@ import img3 from '../assets/img/achievements3.png'
 import img4 from '../assets/img/achievements4.png'
 
 const achievements = ref([
-  {id:1 , img: img1},
-  {id:2 , img: img2},
-  {id:3 , img: img3},
-  {id:4 , img: img4},
+  { id: 1, img: img1 },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
+  { id: 4, img: img4 },
 ])
 
 </script>
