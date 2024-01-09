@@ -70,7 +70,7 @@ useHead({
 
     <div class="relative">
       <OurAchievements />
-      <img src="../assets/back_img/div.tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
+      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
       <div class="atom_shadow absolute -bottom-20 right-40" />
     </div>
 
