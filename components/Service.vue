@@ -1,11 +1,11 @@
 <template>
-  <div class="px-[10px] mt-[124px] relative z-10">
+  <div class="2xl:px-[10px] mt-[124px] relative z-10">
     <div class="flex flex-col mb-[50px]">
       <h1 class="text-mainB text-[60px] font-bold">Услуги</h1>
       <h4 class="text-mainG text-[26px]">Компания Fin Group оказывает услуги</h4>
     </div>
     <div
-      class="flex flex-wrap gap-7 items-center justify-center h-[720px] bg-[#242424] rounded-[20px] py-[55px] px-[80px]">
+      class="flex flex-wrap gap-7 items-center justify-center h-[720px] bg-[#242424] rounded-[20px] py-[55px] 2xl:px-[80px]">
       <div v-for="item of block" :key="item"
         class="flex flex-col w-[365px] h-[280px] border border-mainG rounded-[10px] group relative gap-[30px]">
         <div v-html="item.svg"></div>
