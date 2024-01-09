@@ -102,7 +102,7 @@ const block = ref([
   height: 181px;
 }
 .parent-hover:hover .height_block {
-  height: 48px;
+  height: 50px;
   widows: 2px;
   fill: #168CE4;
 }
