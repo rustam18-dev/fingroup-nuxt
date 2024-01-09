@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[125px]">
+  <div class="mt-[125px] relative z-[10]">
     <h2 class="main_title">Наши достижения</h2>
     <div class="flex w-full gap-[75px] mt-[65px] mb-[125px]">
       <div v-for="achievement in achievements" :key="achievement.id" class="back cursor-pointer rounded-[15px]">
@@ -16,10 +16,10 @@ import img3 from '../assets/img/achievements3.png'
 import img4 from '../assets/img/achievements4.png'
 
 const achievements = ref([
-  {id:1 , img: img1},
-  {id:2 , img: img2},
-  {id:3 , img: img3},
-  {id:4 , img: img4},
+  { id: 1, img: img1 },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
+  { id: 4, img: img4 },
 ])
 
 </script>
