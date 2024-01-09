@@ -20,7 +20,7 @@ useHead({
 
     <!-- Back_objects -->
     <div class="absolute top-20 -left-96 select-none">
-      <img src="../assets/back_img/Cube.png" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">
+      <img src="../assets/back_img/Cube.webp" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">
       <div class="cube_shadow absolute top-0 left-20 z-[1]" />
     </div>
     <div class="absolute top-0 -right-[480px] slider_shadow" />
@@ -30,14 +30,14 @@ useHead({
 
     <Service />
     <div class="relative">
-      <Employees />
+      <Employees/>
       <div class="absolute -top-72 -right-[500px] abstrack_shape" />
       <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
       <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
     </div>
 
     <div class="relative">
-      <Industries />
+      <Industries/>
       <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"
         class="absolute atom -top-10 -right-64" alt=""></NuxtImg>
       <div class="absolute atom_shadow top-16 -right-[155px]" />
@@ -61,7 +61,7 @@ useHead({
     <div class="relative">
       <advantages />
       <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
-      <img src="../assets/back_img/round_shape.png" class="absolute -bottom-32 -left-[320px]" />
+      <img src="../assets/back_img/round_shape.webp" class="absolute -bottom-32 -left-[320px]" />
       <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
       <div class="abstract absolute bottom-0 -right-[450px]" />
       <div class="abstrack_shadow absolute bottom-20 -right-[400px]" />
@@ -70,13 +70,13 @@ useHead({
 
     <div class="relative">
       <OurAchievements />
-      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
+      <img src="../assets/back_img/tn-atom.webp" class="absolute -bottom-40 right-20 atom" alt="">
       <div class="atom_shadow absolute -bottom-20 right-40" />
     </div>
 
     <div class="relative">
       <questions />
-      <img src="../assets/back_img/dot.png" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2] atom" />
+      <img src="../assets/back_img/dot.webp" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2] atom" />
     </div>
   </div>
 </template>
@@ -116,7 +116,7 @@ useHead({
 .shape {
   width: 1229px;
   height: 1229px;
-  background: url('../assets/back_img/Shape.png');
+  background: url('../assets/back_img/Shape.webp');
 }
 
 .star {
@@ -124,7 +124,7 @@ useHead({
   height: 1039.507px;
   transition: transform;
   transition-duration: 700ms;
-  background: url('../assets/back_img/star1.png');
+  background: url('../assets/back_img/star.webp');
 }
 
 /* .star:hover{
@@ -134,7 +134,7 @@ useHead({
 .abstrack_shape {
   width: 1468px;
   height: 1268px;
-  background: url('../assets/back_img/abstract_shape.png');
+  background: url('../assets/back_img/abstract_shape.webp');
 }
 
 .abstrack_shape_shadow {
@@ -182,7 +182,7 @@ useHead({
 .Cube_effect {
   width: 1277.385px;
   height: 1277.385px;
-  background: url('../assets/back_img/Cube_effect.png');
+  background: url('../assets/back_img/Cube_effect.webp');
 }
 
 .Cube_effect_shadow {
@@ -197,7 +197,7 @@ useHead({
 .arrow {
   width: 368px;
   height: 450px;
-  background: url('../assets/back_img/arrow.png');
+  background: url('../assets/back_img/arrow.webp');
   animation: arrow linear 2.5s infinite;
 }
 
@@ -221,13 +221,13 @@ useHead({
 .noroot {
   width: 1071px;
   height: 387px;
-  background: url('../assets/back_img/noroot.png');
+  background: url('../assets/back_img/noroot.webp');
 }
 
 .abstract {
   width: 765px;
   height: 849px;
-  background: url('../assets/back_img/abstract.png') no-repeat;
+  background: url('../assets/back_img/abstract.webp') no-repeat;
 }
 
 .abstrack_shadow {
