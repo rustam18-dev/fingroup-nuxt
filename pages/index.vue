@@ -30,14 +30,14 @@ useHead({
 
     <Service />
     <div class="relative">
-      <Employees />
+      <Employees/>
       <div class="absolute -top-72 -right-[500px] abstrack_shape" />
       <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
       <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
     </div>
 
     <div class="relative">
-      <Industries />
+      <Industries/>
       <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"
         class="absolute atom -top-10 -right-64" alt=""></NuxtImg>
       <div class="absolute atom_shadow top-16 -right-[155px]" />

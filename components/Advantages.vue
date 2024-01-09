@@ -5,12 +5,12 @@
       <div class="title_shadow absolute -top-10 -left-10 -z-10" />
     </h3>
     <div class="flex flex-wrap justify-between">
-      <div v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer">
-        <div class="mt-[100px]">
+      <div v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer parent-hover">
+        <div class="mt-[130px]">
           <component :is="item.component" />
         </div>
         <div class="mt-[100px]">
-          <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px]">
+          <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px] group-hover:text-[#168CE4]">
             {{ item.title }}
           </p>
           <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-[450px]">
@@ -78,7 +78,7 @@ const block = ref([
 ]);
 </script>
 
-<style scoped>
+<style>
 #name_1,
 #name_2,
 #name_3,
@@ -100,5 +100,17 @@ const block = ref([
   filter: blur(70.55000305175781px);
   width: 778px;
   height: 181px;
+}
+.parent-hover:hover .height_block {
+  height: 48px;
+  widows: 2px;
+  fill: #168CE4;
+}
+
+.height_block{
+  widows: 2px;
+  height: 121px;
+  fill: #D9D9D9;
+  transition: height 400ms ease-in-out;
 }
 </style>
