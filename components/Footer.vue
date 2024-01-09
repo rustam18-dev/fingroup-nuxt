@@ -19,18 +19,18 @@
       <div class="flex mt-[50px]">
 
         <div>
-          <footerImg />
+          <footerImgService :class="`transition-all ${heightServicesIcon}`" :isColor="isColor"/>
         </div>
 
         <div class="cursor-pointer">
           <h1 class="text-[#fff] text-[24px] font-medium leading-[19px] pl-[30px]">Услуги</h1>
-          <ol class="text-mainG text-[20px] font-normal leading-[16px] pt-[40px] pl-[30px]">
-            <li class="pb-[30px] hover:text-mainB">Бизнес тренинг</li>
-            <li class="pb-[30px] hover:text-mainB">Автоматизация бизнес процессов</li>
-            <li class="pb-[30px] hover:text-mainB">Стратегическое и операционное консультирование</li>
-            <li class="pb-[30px] hover:text-mainB">Продвижение сайтов</li>
-            <li class="pb-[30px] hover:text-mainB">Бизнес аудит</li>
-          </ol>
+          <ul class="text-mainG text-[20px] font-normal leading-[16px] pt-[40px] pl-[30px]">
+            <li class="pb-[30px] hover:text-mainB" @mouseenter="heightServicesIcon = 'h-[75px] fill-[#168CE4]'; isColor = true"  @mouseleave="isColor = false"> Бизнес тренинг</li>
+            <li class="pb-[30px] hover:text-mainB" @mouseenter="heightServicesIcon = 'h-[125px] fill-[#168CE4]'; isColor = true" @mouseleave="isColor = false">Автоматизация бизнес процессов</li>
+            <li class="pb-[30px] hover:text-mainB" @mouseenter="heightServicesIcon = 'h-[170px] fill-[#168CE4]'; isColor = true" @mouseleave="isColor = false">Стратегическое и операционное консультирование</li>
+            <li class="pb-[30px] hover:text-mainB" @mouseenter="heightServicesIcon = 'h-[215px] fill-[#168CE4]'; isColor = true" @mouseleave="isColor = false">Продвижение сайтов</li>
+            <li class="pb-[30px] hover:text-mainB" @mouseenter="heightServicesIcon = 'h-[260px] fill-[#168CE4]'; isColor = true" @mouseleave="isColor = false">Бизнес аудит</li>
+          </ul>
         </div>
 
       </div>
@@ -39,7 +39,7 @@
 
         <div class="flex mt-[50px]">
           <div>
-            <footerImg />
+            <footerImgProduct :class="`transition-all ${heightServicesIcon}`" :isColor="isColor"/>
           </div>
           <div class="cursor-pointer">
             <h2 class="text-[#fff] text-[24px] font-medium leading-[19px] ml-[30px]">Продукты</h2>
@@ -76,8 +76,16 @@
 </template>
 
 <script setup>
-import footerImg from './Icons/footerImg.vue';
+
+
+import footerImgProduct from './Icons/footerImgProduct.vue';
+import footerImgService from './Icons/footerImgService.vue';
 import fotericon from './Icons/fotericon.vue'
+
+const heightServicesIcon = ref('h-[75px]')
+const isColor = ref(false)
+
+
 </script>
 
-<style></style>
+<style scoped></style>
