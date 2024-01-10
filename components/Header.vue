@@ -1,10 +1,10 @@
 <template>
-  <div class="h-[90px] w-full bg-[#1A1A1A] xl:px-[100px] pt-[10px]">
-    <div class="flex justify-between items-center container mx-auto">
+  <div class="h-[90px] w-full bg-[#1A1A1A] pt-[10px]">
+    <div class="flex justify-between items-center container mx-auto 2xl:px-[100px]">
       <div>
         <img class="ml-[10px]" src="../assets/img/325359946.png" alt="photo">
       </div>
-      <div class="flex">
+      <div class="flex" >
         <ol class="flex items-center font-Montserrat xl:gap-x-[70px] gap-[30px]">
           <li class="header_text">О компании</li>
           <li class="header_text">Услуги</li>
@@ -20,10 +20,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "AppHeader.vue"
-}
+<script setup>
+
 </script>
 
 <style scoped>
