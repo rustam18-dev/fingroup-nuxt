@@ -1,6 +1,6 @@
 <template>
   <div class="h-[90px] w-full bg-[#1A1A1A] pt-[20px]">
-    <div class="flex justify-between items-center container mx-auto 2xl:px-[100px]">
+    <div class="flex justify-between items-center container mx-auto 2xl:px-[70px]">
       <div>
         <img src="../assets/img/325359946.png" alt="photo">
       </div>

@@ -1,19 +1,19 @@
 <template>
   <div class="text-white flex z-50 border-t-2">
-    <div class="w-[60%] min-h-[800px] px-[20px]">
+    <div class="w-[60%] min-h-[800px] px-[20px] z-10">
       <div class="w-[580px] mt-[220px] linear-[85px] text-[60px]">
-        <div class="uppercase font-[700] h-[270px] overflow-hidden ">
+        <div class="uppercase font-[700] h-[270px] overflow-hidden title_block">
           <p class="navbar_title"><span class="text-mainB">Финансовая</span> диагностика и консультация</p>
           <p class="navbar_title">Автоматизация <span class="text-mainB">бизнес - процессов</span></p>
           <p class="navbar_title">Создание <span class="text-mainB">креативных</span> сайтов</p>
         </div>
       </div>
-      <div class="w-full mt-[40px] h-[70px] overflow-hidden">
-        <p class="navbar_description text-mainG text-[25px] text-left linear-[40px]">Определив основные объекты
+      <div class="w-full mt-[40px] h-[70px] overflow-hidden z-10 description_block">
+        <p class="navbar_description text-mainG text-[22px] text-left linear-[40px]">Определив основные объекты
           диагностики, связываем финансовую диагностику с общим диагностическим процессом.</p>
-        <p class="navbar_description text-mainG text-[25px] text-left linear-[40px]">Мы позволяем быстро и эффективно
+        <p class="navbar_description text-mainG text-[22px] text-left linear-[40px]">Мы позволяем быстро и эффективно
           выполнять повторяющуюся работу и перейти на безбумажный документооборот.</p>
-        <p class="navbar_description text-mainG text-[25px] text-left linear-[40px]">С грамотно разработанным сайтом от
+        <p class="navbar_description text-mainG text-[22px] text-left linear-[40px]">С грамотно разработанным сайтом от
           компанией FIN Group Вы сможете планомерно двигаться вперед.</p>
       </div>
       <custom-button theme="light" class="mt-[43px]"><span class="px-[24px]">Подробнее</span></custom-button>
@@ -46,8 +46,23 @@
 
 <style scoped>
 .navbar_title {
-  transition: all 2s 2s;
-  animation: navbar_title 9s 2s infinite forwards;
+  transition: all 2.5s;
+  animation-duration: 2.5s;
+  animation: navbar_title 20s infinite ease-in-out;
+}
+
+.title_block:hover .navbar_title {
+  animation-play-state: paused;
+}
+
+.description_block:hover .navbar_description {
+  animation-play-state: paused;
+}
+
+.navbar_description {
+  transition: all 2.5s;
+  animation-duration: 2.5s;
+  animation: navbar_description 17.5s infinite ease-in-out;
 }
 
 .top-block {
@@ -112,11 +127,11 @@
 
   0%,
   33% {
-    animation-delay: 2s;
     transform: translate(0px, 0%);
   }
 
   33% {
+    animation-delay: 5s;
     transform: translate(0px, -100%);
   }
 
@@ -125,6 +140,7 @@
   }
 
   100% {
+    animation-delay: 5s;
     transform: translate(0px, 0%);
   }
 }
@@ -133,15 +149,17 @@
 
   0%,
   33% {
-    animation-delay: 2s;
+    animation-delay: 2.5s;
     transform: translate(0px, 0%);
   }
 
   33% {
+    animation-delay: 2.5s;
     transform: translate(0px, -100%);
   }
 
   66% {
+    animation-delay: 2.5s;
     transform: translate(0px, -200%);
   }
 
@@ -149,9 +167,4 @@
     transform: translate(0px, 0%);
   }
 }
-
-
-.navbar_description {
-  transition: all 2s 2s;
-  animation: navbar_description 9s 2s infinite forwards;
-}</style>
+</style>
