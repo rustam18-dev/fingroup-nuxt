@@ -1,13 +1,13 @@
 <template>
   <div class="relative z-10 mt-[245px]">
-    <h3 class="text-mainB text-[60px] font-bold leading-[85px] relative">
+    <h3 data-aos="fade-up" class="text-mainB text-[60px] font-bold leading-[85px] relative">
       Наши преимущества
       <div class="title_shadow absolute -top-10 -left-10 -z-10" />
     </h3>
     <div class="flex flex-wrap justify-between">
-      <div v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer parent-hover">
+      <div data-aos="zoom-in-down" v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer parent-hover">
         <div class="mt-[130px]">
-          <component :is="item.component" />
+          <Advantages/>
         </div>
         <div class="mt-[100px]">
           <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px] group-hover:text-[#168CE4]">
@@ -29,49 +29,41 @@ import { ref } from "vue";
 const block = ref([
   {
     id: 1,
-    component: Advantages,
     title: "Разноплановость",
     name: "Разработка любых сайтов — лэндинги, визитки, интернет-магазины, порталы, форумы, комплексные проекты",
   },
   {
     id: 2,
-    component: Advantages,
     title: "Многозадачность",
     name: "Мы оказываем полный спектр услуг — от создания сайтов и их продвижения до технической поддержки",
   },
   {
     id: 3,
-    component: Advantages,
     title: "Индивидуальный подход",
     name: "Максимальное внимание к деталям и пожеланиям клиента, изучение бизнес-контекста каждого конкретного проекта",
   },
   {
     id: 4,
-    component: Advantages,
     title: "Команда",
     name: "Над каждым проектом работает команда профессионалов различного профиля: копирайтеры, дизайнеры и др.",
   },
   {
     id: 5,
-    component: Advantages,
     title: "Доступность",
     name: "Гибкая ценовая политика компании предусматривает скидки, удобный вариант оплаты для каждого клиента",
   },
   {
     id: 6,
-    component: Advantages,
     title: "Результативность",
     name: "Мы всегда добиваемся полного решения поставленных задач. За нашими плечами большой опыт и настоящие профи",
   },
   {
     id: 7,
-    component: Advantages,
     title: "Эффективность",
     name: "Комплексное и только «белое» SEO-продвижение, SMM, рекламные кампании Яндекс Директ и Google Adwords",
   },
   {
     id: 8,
-    component: Advantages,
     title: "Профессионализм",
     name: "Мы создаем красивые сайты с современным дизайном и изящными анимациями, наполняем их качественным контентом",
   },
@@ -112,5 +104,11 @@ const block = ref([
   height: 121px;
   fill: #D9D9D9;
   transition: height 400ms ease-in-out;
+}
+.animate{
+  transition: transform ease-in-out 400ms;
+}
+.parent-hover:hover .animate{
+  transform: rotate(-90deg);
 }
 </style>

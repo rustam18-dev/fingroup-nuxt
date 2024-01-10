@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { onMounted } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+onMounted(() => AOS.init());
 useHead({
   title: 'FinGroup - автоматизация бизнес процессов!',
   meta: [
@@ -16,7 +20,7 @@ useHead({
 
 <template>
   <div class="container mx-auto 2xl:px-[100px] relative">
-    <Navbar />
+    <Navbar data-aos="fade-down" />
 
     <!-- Back_objects -->
     <div class="absolute top-20 -left-96 select-none">
@@ -29,15 +33,16 @@ useHead({
     <!-- Back_objects -->
 
     <Service />
+
     <div class="relative">
-      <Employees/>
+      <Employees />
       <div class="absolute -top-72 -right-[500px] abstrack_shape" />
       <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
       <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
     </div>
 
     <div class="relative">
-      <Industries/>
+      <Industries />
       <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"
         class="absolute atom -top-10 -right-64" alt=""></NuxtImg>
       <div class="absolute atom_shadow top-16 -right-[155px]" />
@@ -51,8 +56,8 @@ useHead({
 
     <div class="relative">
       <partners />
-      <div class="arrow absolute" />
-      <div class="noroot absolute -left-[600px] -bottom-72" />
+      <div data-aos="fade-left" class="arrow absolute" />
+      <div data-aos="fade-right" class="noroot absolute -left-[600px] -bottom-72" />
       <div class="absolute -bottom-64 -left-[400px]  abstrack_shape_shadow2" />
       <div class="absolute -bottom-80 -right-[400px]  abstrack_shape_shadow2" />
 
@@ -70,7 +75,7 @@ useHead({
 
     <div class="relative">
       <OurAchievements />
-      <img src="../assets/back_img/tn-atom.webp" class="absolute -bottom-40 right-20 atom" alt="">
+      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
       <div class="atom_shadow absolute -bottom-20 right-40" />
     </div>
 

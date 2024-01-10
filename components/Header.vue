@@ -1,8 +1,8 @@
 <template>
-  <div class="h-[90px] w-full bg-[#1A1A1A] pt-[10px]">
+  <div class="h-[90px] w-full bg-[#1A1A1A] pt-[20px]">
     <div class="flex justify-between items-center container mx-auto 2xl:px-[100px]">
       <div>
-        <img class="ml-[10px]" src="../assets/img/325359946.png" alt="photo">
+        <img src="../assets/img/325359946.png" alt="photo">
       </div>
       <div class="flex" >
         <ol class="flex items-center font-Montserrat xl:gap-x-[70px] gap-[30px]">
@@ -13,7 +13,7 @@
           <li class="header_text mr-[50px]">Контакты</li>
         </ol>
         <button
-          class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] mr-[10px] ">Оставить
+          class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] ">Оставить
           заявку</button>
       </div>
     </div>
