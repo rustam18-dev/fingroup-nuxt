@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { onMounted } from 'vue';
+import AOS from 'aos';
+onMounted(() => AOS.init());
 useHead({
   title: 'FinGroup - автоматизация бизнес процессов!',
   meta: [
@@ -16,7 +19,7 @@ useHead({
 
 <template>
   <div class="container mx-auto 2xl:px-[100px] relative">
-    <Navbar />
+    <Navbar data-aos="fade-up"/>
 
     <!-- Back_objects -->
     <div class="absolute top-20 -left-96 select-none">
