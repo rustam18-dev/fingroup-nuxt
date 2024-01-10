@@ -1,9 +1,9 @@
 <template>
   <div class="bg-[#242424] mt-[125px] mx-[10px] rounded-[20px] w-full relative z-50">
-    <h2 class="text-mainB text-[60px] font-bold leading-[85px] pt-[56px] pl-[82px]">Наши проекты</h2>
+    <h2 data-aos="fade-up" class="text-mainB text-[60px] font-bold leading-[85px] pt-[56px] pl-[82px]">Наши проекты</h2>
     <div class="flex">
 
-      <div :class="item.classblock" v-for="item of block" :key="item" class="relative mb-[54px] w-1/3 h-[409px]">
+      <div data-aos="fade-down" :class="item.classblock" v-for="item of block" :key="item" class="relative mb-[54px] w-1/3 h-[409px]">
         <img :id="'img_' + item.id"
           class="absolute transition-all duration-300 linear w-[300px] group-hover:w-[200px] group-hover:opacity-0"
           :src="item.img" alt="photo">

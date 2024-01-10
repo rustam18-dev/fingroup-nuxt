@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col mt-[189px]">
-    <div class="flex flex-col gap-[40px] mb-[64px]">
+    <div data-aos="fade-up" class="flex flex-col gap-[40px] mb-[64px]">
       <h2 class="main_title">Наши сотрудники</h2>
       <span class="text">Команда профессионалов</span>
     </div>
     <div class="grid grid-cols-2 gap-[40px]">
       <div v-for="info in employeesInfo" :key="info.id" class="w-full z-[50]">
-        <CardEmployees :title="info.title" :img="info.img" :jobTitle="info.jobTitle" />
+        <CardEmployees data-aos="fade-left" :title="info.title" :img="info.img" :jobTitle="info.jobTitle" />
       </div>
     </div>
     <div class="flex flex-col justify-center items-center w-full mt-[50px]">

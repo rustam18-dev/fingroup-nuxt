@@ -1,8 +1,8 @@
 <template>
   <div class="mt-[125px] relative z-[10]">
-    <h2 class="main_title">Наши достижения</h2>
+    <h2 data-aos="fade-up" class="main_title">Наши достижения</h2>
     <div class="flex w-full gap-[75px] mt-[65px] mb-[125px]">
-      <div v-for="achievement in achievements" :key="achievement.id" class="back cursor-pointer rounded-[15px]">
+      <div data-aos="flip-down" v-for="achievement in achievements" :key="achievement.id" class="back cursor-pointer rounded-[15px]">
         <img :src="achievement.img" alt="">
       </div>
     </div>

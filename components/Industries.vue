@@ -1,13 +1,13 @@
 <template>
   <div class="mt-[125px] relative z-10">
-    <div>
+    <div data-aos="fade-up">
       <h2 class="main_title">Отрасли и немного статистики</h2>
       <p class="text-mainG text-[26px] font-normal ml-[10px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
     </div>
 
     <div class="flex justify-center gap-[40px] mx-[10px] mt-[70px] cursor-pointer">
 
-      <div v-for="statistic in statistics" :key="statistic.id" class="flex flex-col justify-center items-center w-[325px] h-[350px] rounded-[15px] bg-[#2C2C2C]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
+      <div v-for="statistic in statistics" :key="statistic.id" data-aos="fade-right" class="flex flex-col justify-center items-center w-[325px] h-[350px] rounded-[15px] bg-[#2C2C2C]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
         <p class="text-mainB text-[95px] font-semibold leading-[85px]">{{ animatedValue(statistic) }} <span v-if="statistic.id === 1" class="text-mainG -ml-[30px]">+</span></p>
         <p class="text-mainG text-[35px] font-normal leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
       </div>

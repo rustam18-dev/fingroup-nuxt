@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col flex-wrap mt-[225px] relative z-10">
-    <div>
+    <div data-aos="fade-up">
       <h1 class="text-[65px] text-mainB font-bold ">Наши партнеры</h1>
       <h3 class="text-mainG text-[26px] font-normal mt-[40px] mb-[100px]">Мы работаем только с известными проверенными
         брендами</h3>
     </div>
-    <div class="flex h-[353px] bg-[#242424] rounded-[20px] gap-10 justify-center items-center">
+    <div data-aos="fade-up" class="flex h-[353px] bg-[#242424] rounded-[20px] gap-10 justify-center items-center">
       <img class="partners_img" src="../assets/img/img_partners/1c.png" alt="photo">
       <div class="border-l-[1px] h-[200px] border-mainG">
         <img class="partners_img pl-[30px]" src="../assets/img/img_partners/sklad.png" alt="photo">
