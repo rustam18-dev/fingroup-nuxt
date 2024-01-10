@@ -19,7 +19,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto 2xl:px-[100px] relative">
+  <div class="container mx-auto 2xl:px-[70px] relative">
     <Navbar data-aos="fade-down" />
 
     <!-- Back_objects -->
