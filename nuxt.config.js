@@ -1,7 +1,6 @@
 import { resolve } from 'path'
 
 export default defineNuxtConfig({
-  devtools: {default: true},
   build: {
     transpile: ['class-validator'],
   },
@@ -25,6 +24,7 @@ export default defineNuxtConfig({
       }
     }],
     '@nuxt/image',
+    'nuxt-icons'
   ],
   image: {
     format: ['webp'],
