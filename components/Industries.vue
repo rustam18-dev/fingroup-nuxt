@@ -79,7 +79,7 @@ const animateStatistic = (id, duration) => {
 
 </script>
 
-<style>
+<style scoped>
 [data-statistic-id] p {
   transition: all 1s ease;
 }
