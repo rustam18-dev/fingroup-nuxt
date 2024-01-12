@@ -20,67 +20,69 @@ useHead({
 
 <template>
   <div class="container mx-auto 2xl:px-[70px] relative">
-<!--    <Navbar data-aos="fade-down" />-->
+    <Navbar data-aos="fade-down" />
 
-<!--    <div class="absolute top-20 -left-96 select-none">-->
-<!--      <img src="../assets/back_img/Cube.webp" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">-->
-<!--      <div class="cube_shadow absolute top-0 left-20 z-[1]" />-->
-<!--    </div>-->
-<!--    <div class="absolute top-0 -right-[480px] slider_shadow" />-->
-<!--    <div class="absolute top-[280px] -right-[600px] shape" />-->
-<!--    <div class="absolute top-[1265px] -left-[400px] star" />-->
+    
+    <div class="absolute top-20 -left-96 select-none">
+      <img src="../assets/back_img/Cube.webp" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">
+      <div class="cube_shadow absolute top-0 left-20 z-[1]" />
+    </div>
+    <div class="absolute top-0 -right-[480px] slider_shadow" />
+    <div class="absolute top-[280px] -right-[600px] shape" />
+    <div class="absolute top-[1265px] -left-[400px] star" />
+    
 
-<!--    <Service />-->
+    <Service />
 
-<!--    <div class="relative">-->
-<!--      <Employees />-->
-<!--      <div class="absolute -top-72 -right-[500px] abstrack_shape" />-->
-<!--      <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />-->
-<!--      <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />-->
-<!--    </div>-->
+    <div class="relative">
+      <Employees />
+      <div class="absolute -top-72 -right-[500px] abstrack_shape" />
+      <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
+      <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <Industries />-->
-<!--      <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"-->
-<!--        class="absolute atom -top-10 -right-64" alt=""></NuxtImg>-->
-<!--      <div class="absolute atom_shadow top-16 -right-[155px]" />-->
-<!--    </div>-->
+    <div class="relative">
+      <Industries />
+      <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"
+        class="absolute atom -top-10 -right-64" alt=""></NuxtImg>
+      <div class="absolute atom_shadow top-16 -right-[155px]" />
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <project />-->
-<!--      <div class="absolute -bottom-44 -left-[1070px] Cube_effect" />-->
-<!--      <div class="absolute bottom-16 -left-[570px] Cube_effect_shadow" />-->
-<!--    </div>-->
+    <div class="relative">
+      <project />
+      <div class="absolute -bottom-44 -left-[1070px] Cube_effect" />
+      <div class="absolute bottom-16 -left-[570px] Cube_effect_shadow" />
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <partners />-->
-<!--      <div data-aos="fade-left" class="arrow absolute" />-->
-<!--      <div data-aos="fade-right" class="noroot absolute -left-[600px] -bottom-72" />-->
-<!--      <div class="absolute -bottom-64 -left-[400px]  abstrack_shape_shadow2" />-->
-<!--      <div class="absolute -bottom-80 -right-[400px]  abstrack_shape_shadow2" />-->
+    <div class="relative">
+      <partners />
+      <div data-aos="fade-left" class="arrow absolute" />
+      <div data-aos="fade-right" class="noroot absolute -left-[600px] -bottom-72" />
+      <div class="absolute -bottom-64 -left-[400px]  abstrack_shape_shadow2" />
+      <div class="absolute -bottom-80 -right-[400px]  abstrack_shape_shadow2" />
 
-<!--    </div>-->
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <advantages />-->
-<!--      <div class="gray_shadow absolute -bottom-60 -left-[500px]" />-->
-<!--      <img src="../assets/back_img/round_shape.webp" class="absolute -bottom-32 -left-[320px]" />-->
-<!--      <div class="gray_shadow absolute -bottom-60 -left-[500px]" />-->
-<!--      <div class="abstract absolute bottom-0 -right-[450px]" />-->
-<!--      <div class="abstrack_shadow absolute bottom-20 -right-[400px]" />-->
-<!--      <div class="abstrack_shadow absolute -bottom-[600px] -right-[400px]" />-->
-<!--    </div>-->
+    <div class="relative">
+      <advantages />
+      <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
+      <img src="../assets/back_img/round_shape.webp" class="absolute -bottom-32 -left-[320px]" />
+      <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
+      <div class="abstract absolute bottom-0 -right-[450px]" />
+      <div class="abstrack_shadow absolute bottom-20 -right-[400px]" />
+      <div class="abstrack_shadow absolute -bottom-[600px] -right-[400px]" />
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <OurAchievements />-->
-<!--      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">-->
-<!--      <div class="atom_shadow absolute -bottom-20 right-40" />-->
-<!--    </div>-->
+    <div class="relative">
+      <OurAchievements />
+      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
+      <div class="atom_shadow absolute -bottom-20 right-40" />
+    </div>
 
-<!--    <div class="relative">-->
-<!--      <questions />-->
-<!--      <img src="../assets/back_img/dot.webp" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2] atom" />-->
-<!--    </div>-->
+    <div class="relative">
+      <questions />
+      <img src="../assets/back_img/dot.webp" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2] atom" />
+    </div>
   </div>
 </template>
 
