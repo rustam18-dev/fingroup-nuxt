@@ -1,19 +1,19 @@
 <template>
-  <div class="relative z-10 mt-[245px]">
+  <div class="relative z-10 mt-[245px] px-[40px]">
     <h2 data-aos="fade-up" class="main_title relative">
       Наши преимущества
       <div class="title_shadow absolute -top-10 -left-10 -z-10" />
     </h2>
     <div class="grid xl:grid-cols-2 justify-between">
-      <div data-aos="zoom-in-down" v-for="item of block" :key="item" class="w-[90%] mb-[10px] flex group cursor-pointer parent-hover">
+      <div data-aos="zoom-in-down" v-for="item of block" :key="item" class=" mb-[10px] flex group cursor-pointer parent-hover">
         <div class="mt-[130px]">
           <Advantages/>
         </div>
-        <div class="mt-[100px] w-full">
+        <div class="mt-[100px] ">
           <h3 class="h3">
             {{ item.title }}
           </h3>
-          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-full">
+          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] ">
             {{ item.name }}
           </p>
         </div>
@@ -78,11 +78,11 @@ const block = ref([
 #name_5,
 #name_6,
 #name_7 {
-  /* width: 550px; */
+  width: auto;
 }
 
 #name_8 {
-  /* width: 600px; */
+  width: auto;
 }
 
 .h3{
