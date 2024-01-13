@@ -1,12 +1,17 @@
 <template>
-  <div data-aos="fade-up" class="flex justify-between items-center my-[125px] h-[410px] bg-[#242424] rounded-[20px] relative z-[10]">
-    <div class="ml-[60px]">
-      <h1 class="text-mainB text-[60px] font-bold leading-[70px] w-[484px]">У вас остались вопросы?</h1>
-      <h2 class="text-[#fff] text-[40px] font-semibold leading-[85px]">Мы обязательно свяжемся с вами!</h2>
-      <custom-button theme="light"><span class="px-[40px] py-[20px]">НАПИШИТЕ НАМ</span></custom-button>
+  <div data-aos="fade-up" class="flex justify-between items-center lg:my-[125px] mb-[100px] py-[20px] h-auto max-h-[410px] bg-[#242424] rounded-[20px] relative z-[10]">
+    <div class="md:ml-[60px] ml-[20px]">
+      <h1 class="main_title">У вас остались <br class="hidden xl:block"> вопросы?</h1>
+      <h2 class="text-[#fff] font-semibold lg:leading-[70px] connect">Мы обязательно свяжемся с вами!</h2>
+      <custom-button class="mt-4 md:mt-0" theme="light"><span class="px-[40px] py-[20px]">НАПИШИТЕ НАМ</span></custom-button>
     </div>
-    <div class="mr-[60px]">
+    <div class="mr-[60px] hidden md:block">
       <img src="./Icons/Questions.png" alt="photo">
     </div>
   </div>
 </template>
+<style scoped>
+.connect{
+  font-size: clamp(20px, 2vw + 1rem, 40px);
+}
+</style>
