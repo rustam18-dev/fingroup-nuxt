@@ -1,19 +1,19 @@
 <template>
-  <div class="relative z-10 mt-[245px] px-[40px]">
+  <div class="relative z-10 lg:mt-[245px] mt-[100px]">
     <h2 data-aos="fade-up" class="main_title relative">
       Наши преимущества
       <div class="title_shadow absolute -top-10 -left-10 -z-10" />
     </h2>
     <div class="grid xl:grid-cols-2 justify-between">
       <div data-aos="zoom-in-down" v-for="item of block" :key="item" class=" mb-[10px] flex group cursor-pointer parent-hover">
-        <div class="mt-[130px]">
+        <div class="lg:mt-[130px] mt-[50px] h-[100px] lg:h-auto">
           <Advantages/>
         </div>
-        <div class="mt-[100px] ">
+        <div class="lg:mt-[100px] mt-[40px]">
           <h3 class="h3">
             {{ item.title }}
           </h3>
-          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] ">
+          <p :id="'name_' + item.id" class="text-mainG text-[14px] sm:text-[18px] lg:text-[24px] font-normal leading-[24px] lg:leading-[35px] ml-[24px] ">
             {{ item.name }}
           </p>
         </div>
@@ -86,27 +86,27 @@ const block = ref([
 }
 
 .h3{
-  @apply text-[#fff] font-bold leading-[85px] ml-[24px] group-hover:text-[#168CE4];
-  font-size: clamp(20px, 3vw + 1rem, 40px);
+  @apply text-[#fff] font-bold lg:leading-[85px] ml-[24px] group-hover:text-[#168CE4];
+  font-size: clamp(20px, 2vw + 1rem, 40px);
 }
 
 .title_shadow {
   border-radius: 3000px;
   opacity: 0.05;
   background: #168ce4;
-  filter: blur(70.55000305175781px);
+  filter: blur(70px);
   width: 778px;
   height: 181px;
 }
 .parent-hover:hover .height_block {
-  height: 50px;
+  height: 30px;
   width: 2px;
   fill: #168CE4;
 }
 
 .height_block{
   width: 2px;
-  height: 121px;
+  
   fill: #D9D9D9;
   transition: height 400ms ease-in-out;
 }
