@@ -5,7 +5,7 @@
       <h3 class="text-mainG text-[20px] lg:text-[26px] font-normal mt-[40px] mb-[100px] pl-[20px]">Мы работаем только с известными проверенными
         брендами</h3>
     </div>
-    <div data-aos="fade-up" class="h-auto flex flex-wrap justify-center gap-6 py-[50px] px-[20px] mx-[15px] bg-[#242424] rounded-[20px]">
+    <div data-aos="fade-up" class=" carousel-inner h-auto flex justify-center gap-6 py-[50px] px-[20px] mx-[15px] bg-[#242424] rounded-[20px] ">
       <img class="partners_img mx-auto md:ml-[20px] lg:max-w-[300px] lg:max-h-[300px]" src="../assets/img/img_partners/1c.png" alt="photo">
       <div class="lg:border-l-[1px] h-[200px] w-[250px] border-mainG">
         <img class="partners_img  lg:max-w-[300px] lg:max-h-[300px] mx-auto md:mr-[90px] lg:pt-[100xp]" src="../assets/img/img_partners/sklad.png" alt="photo">
@@ -24,6 +24,23 @@
 <style scoped>
 .partners_img {
   @apply grayscale hover:grayscale-0 duration-300
+}
+
+.carousel-inner {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  align-items: center;
+  object-fit: contain;
+  gap: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 </style>
 
