@@ -20,26 +20,26 @@ useHead({
 
 <template>
   <div class="container mx-auto 2xl:px-[70px] relative">
-    <Navbar data-aos="fade-down" />
+    <!-- <Navbar data-aos="fade-down" />
 
-    <!-- Back_objects -->
+  
     <div class="absolute top-20 -left-96 select-none">
       <img src="../assets/back_img/Cube.webp" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">
       <div class="cube_shadow absolute top-0 left-20 z-[1]" />
     </div>
     <div class="absolute top-0 -right-[480px] slider_shadow" />
     <div class="absolute top-[280px] -right-[600px] shape" />
-    <div class="absolute top-[1265px] -left-[400px] star" />
-    <!-- Back_objects -->
+    <div class="absolute top-[1265px] -left-[400px] star" /> -->
+  
 
     <Service />
 
-    <div class="relative">
+    <!-- <div class="relative">
       <Employees />
       <div class="absolute -top-72 -right-[500px] abstrack_shape" />
       <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
       <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
-    </div>
+    </div> -->
 
     <div class="relative">
       <Industries />
@@ -63,7 +63,7 @@ useHead({
 
     </div>
 
-    <div class="relative">
+    <!-- <div class="relative">
       <advantages />
       <div class="gray_shadow absolute -bottom-60 -left-[500px]" />
       <img src="../assets/back_img/round_shape.webp" class="absolute -bottom-32 -left-[320px]" />
@@ -82,7 +82,7 @@ useHead({
     <div class="relative">
       <questions />
       <img src="../assets/back_img/dot.webp" class="absolute -bottom-[380px] -left-[420px] opacity-[0.2] atom" />
-    </div>
+    </div> -->
   </div>
 </template>
 

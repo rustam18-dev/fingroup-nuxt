@@ -18,7 +18,7 @@ const classes = computed(() => ({
 <style scoped>
 .button {
   overflow: hidden;
-  @apply flex items-center justify-center hover:duration-1000 duration-500 px-[24px] py-[14px] relative uppercase text-white text-[12px] font-semibold w-[300px] max-h-[48px] min-h-[48px] text-center border border-mainB rounded-[10px]
+  @apply flex items-center justify-center hover:duration-1000 duration-500 px-[24px] py-[14px] relative uppercase text-white text-[12px] font-semibold w-full max-h-[48px] min-h-[48px] text-center border border-mainB rounded-[10px]
 }
 
 .button--light {
