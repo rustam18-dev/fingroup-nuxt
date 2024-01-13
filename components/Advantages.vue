@@ -1,19 +1,19 @@
 <template>
   <div class="relative z-10 mt-[245px]">
-    <h3 data-aos="fade-up" class="text-mainB text-[60px] font-bold leading-[85px] relative">
+    <h2 data-aos="fade-up" class="main_title relative">
       Наши преимущества
       <div class="title_shadow absolute -top-10 -left-10 -z-10" />
-    </h3>
-    <div class="flex flex-wrap justify-between">
-      <div data-aos="zoom-in-down" v-for="item of block" :key="item" class="w-[48%] mb-[10px] flex group cursor-pointer parent-hover">
+    </h2>
+    <div class="grid xl:grid-cols-2 justify-between">
+      <div data-aos="zoom-in-down" v-for="item of block" :key="item" class="w-[90%] mb-[10px] flex group cursor-pointer parent-hover">
         <div class="mt-[130px]">
           <Advantages/>
         </div>
-        <div class="mt-[100px]">
-          <p class="text-[#fff] text-[40px] font-bold leading-[85px] ml-[24px] group-hover:text-[#168CE4]">
+        <div class="mt-[100px] w-full">
+          <h3 class="h3">
             {{ item.title }}
-          </p>
-          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-[450px]">
+          </h3>
+          <p :id="'name_' + item.id" class="text-mainG text-[24px] font-normal leading-[35px] ml-[24px] w-full">
             {{ item.name }}
           </p>
         </div>
@@ -78,11 +78,16 @@ const block = ref([
 #name_5,
 #name_6,
 #name_7 {
-  width: 550px;
+  /* width: 550px; */
 }
 
 #name_8 {
-  width: 600px;
+  /* width: 600px; */
+}
+
+.h3{
+  @apply text-[#fff] font-bold leading-[85px] ml-[24px] group-hover:text-[#168CE4];
+  font-size: clamp(20px, 3vw + 1rem, 40px);
 }
 
 .title_shadow {
@@ -95,12 +100,12 @@ const block = ref([
 }
 .parent-hover:hover .height_block {
   height: 50px;
-  widows: 2px;
+  width: 2px;
   fill: #168CE4;
 }
 
 .height_block{
-  widows: 2px;
+  width: 2px;
   height: 121px;
   fill: #D9D9D9;
   transition: height 400ms ease-in-out;

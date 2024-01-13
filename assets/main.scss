@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .main_title{
-  @apply text-mainB font-bold text-[60px] leading-[85px]
+  @apply text-mainB font-bold 2xl:leading-[85px];
+  font-size: clamp(30px,2vw + 1.5rem, 60px);
 }
 
 @layer base {

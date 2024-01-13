@@ -1,9 +1,10 @@
 <template>
-  <div class="back flex items-end max-w-[690px] max-h-[350px] h-full rounded-[20px] z-[50] cursor-pointer">
-    <div class="flex flex-col h-full items-start justify-between pt-[50px] pb-[30px] pl-[30px] relative">
+  <div class="back flex items-end max-w-[690px] w-auto max-h-[350px] h-full rounded-[20px] z-[50] cursor-pointer">
+    <div
+      class="flex flex-col max-w-[55%] h-full items-start justify-between p-[15px] sm:p-[20px] xl:pt-[50px] lg:pb-[30px] lg:pl-[30px] relative">
       <h1 class="title">{{ title }}</h1>
-      <span class="text">{{ jobTitle }}</span>
-      <div class="absolute bottom-6 opacity-0 button duration-500">
+      <span class="text xl:pb-0 sm:pb-[60px] pb-[45px]">{{ jobTitle }}</span>
+      <div class="absolute bottom-6 xl:opacity-0 button  duration-500 xl:w-[300px] lg:w-[220px] md:w-[300px] sm:w-[220px] w-[35vw] ">
         <CustomButton class="text-[12px]">Подробнее</CustomButton>
       </div>
       <div class="round duration-700" />
@@ -23,11 +24,19 @@ const props = defineProps(['jobTitle', 'title', 'img']);
 
 <style scoped>
 .title {
-  @apply text-mainB font-bold text-[50px] leading-[60px] w-[300px]
+  @apply text-mainB font-bold 2xl:leading-[60px] 2xl:w-[300px];
+  font-size: clamp(24px, 1.7vw + 1rem, 50px);
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: clamp(24px, 3vw + 1rem, 50px);
+  }
 }
 
 .text {
-  @apply text-mainG text-[26px] leading-[40px] duration-500
+  @apply text-mainG leading-[40px] duration-500 lg:text-[26px] sm:text-[20px] text-[16px]
 }
 
 .back {
