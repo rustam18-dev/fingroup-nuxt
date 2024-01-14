@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:px-[10px] mt-[124px] relative z-10 mx-[20px]">
+  <div class="mt-[124px] relative z-10">
     <div data-aos="fade-up" class="flex flex-col mb-[50px]">
       <h1 class="text-mainB text-[40px] sm:text-[40px] font-bold">Услуги</h1>
       <h4 class="text-mainG text-[20px] sm:text-[20px]">Компания Fin Group оказывает услуги</h4>

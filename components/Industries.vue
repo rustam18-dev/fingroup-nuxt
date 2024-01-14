@@ -7,7 +7,7 @@
 
     <div class="flex flex-wrap gap-4 justify-center lg:justify-center mt-[70px] cursor-pointer">
 
-      <div v-for="statistic in statistics" :key="statistic.id" data-aos="fade-right" class="flex flex-col justify-center items-center w-[340px]  md:w-[300px] h-[350px] rounded-[15px] bg-[#2C2C2C] lg:w-[330px]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
+      <div v-for="statistic in statistics" :key="statistic.id" data-aos="fade-right" class="flex flex-col justify-center items-center w-[340px]  md:w-[300px] h-[350px] rounded-[15px] bg-[#2C2C2C] lg:w-[325px]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
         <p class="text-mainB text-[95px] font-semibold leading-[85px]" :style="{ transition: `all ${statistic.duration || 1}s ease` }">{{ animatedValue(statistic.id) }} <span v-if="statistic.id === 1" class="text-mainG -ml-[30px]">+</span></p>
         <p class="text-mainG text-[35px] font-normal leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
       </div>

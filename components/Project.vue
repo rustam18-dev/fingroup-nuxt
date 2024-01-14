@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#242424] mt-[125px] mx-[20px] rounded-[20px] relative z-50">
+  <div class="bg-[#242424] mt-[125px] rounded-[20px] relative z-10">
     <h2 data-aos="fade-up" class="main_title">Наши проекты</h2>
     <div class="flex flex-wrap items-center justify-center  ">
 
