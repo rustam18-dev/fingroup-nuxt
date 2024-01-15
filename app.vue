@@ -8,6 +8,6 @@
         </NuxtLayout>
       </div>
     </div>
-     <Footer />
+    <Footer />
   </div>
 </template>

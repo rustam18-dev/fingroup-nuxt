@@ -2,7 +2,7 @@
   <div  data-aos="fade-up" class="flex flex-col flex-wrap mt-[225px] relative z-10">
     <div>
       <h1 class="text-[40px] lg:text-[65px] text-mainB font-bold pl-[15px]">Наши партнеры</h1>
-      <h3 class="text-mainG text-[20px] lg:text-[26px] font-normal mt-[40px] mb-[100px] pl-[20px]">Мы работаем только с известными проверенными
+      <h3 class="text-mainG text-[20px] lg:text-[26px] font-normal mt-[40px] pl-[20px]">Мы работаем только с известными проверенными
         брендами</h3>
     </div>
     <div data-aos="fade-up" class="h-[350px] flex justify-center gap-6 py-[50px] px-[20px] bg-[#242424] rounded-[20px] overflow-hidden w-[380px] lg:w-[1400px] -mt-[70px] lg:mt-[100px]">

@@ -1,11 +1,11 @@
 <template>
-  <div class="mt-[125px] relative z-10 ml-[20px]">
+  <div class="mt-[125px] relative z-10">
     <div data-aos="fade-up">
       <h2 class="text-mainB text-[30px] lg:text-[45px]">Отрасли и немного статистики</h2>
-      <p class="text-mainG text-[18px] font-normal lg:text-[26px] ml-[10px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
+      <p class="text-mainG text-[18px] font-normal lg:text-[26px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
     </div>
 
-    <div class="flex flex-wrap gap-4 justify-center lg:justify-center mt-[70px] cursor-pointer">
+    <div class="flex flex-wrap gap-4 justify-center lg:justify-between mt-[70px] cursor-pointer">
 
       <div v-for="statistic in statistics" :key="statistic.id" data-aos="fade-right" class="flex flex-col justify-center items-center w-[340px]  md:w-[300px] h-[350px] rounded-[15px] bg-[#2C2C2C] lg:w-[325px]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
         <p class="text-mainB text-[95px] font-semibold leading-[85px]" :style="{ transition: `all ${statistic.duration || 1}s ease` }">{{ animatedValue(statistic.id) }} <span v-if="statistic.id === 1" class="text-mainG -ml-[30px]">+</span></p>
