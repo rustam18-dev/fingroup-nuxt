@@ -1,6 +1,6 @@
 <template>
   <div class="text-white flex z-50 border-t-2">
-    <div class="w-[60%] min-h-[800px] px-[20px] z-10">
+    <div class="w-[60%] min-h-[800px] z-10">
       <div class="xl:w-[580px] md:w-[400px] sm:w-[320px] w-[440px] mt-[220px] linear-[85px] xl:text-[60px] md:text-[40px] sm:text-[30px] text-[44px] ">
         <div class="uppercase font-[700] xl:h-[270px] md:h-[180px] sm:h-[135px] h-[210px] overflow-hidden title_block">
           <p class="navbar_title"><span class="text-mainB">Финансовая</span> диагностика и консультация</p>
@@ -20,21 +20,21 @@
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden sm:flex hidden justify-between">
       <div class="w-[48%] flex flex-col justify-center items-end top-block z-10">
-        <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/2.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/3.png" alt="">
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/2.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
       </div>
 
       <div class="w-[48%] flex flex-col justify-center mt-24 items-end bottom-block z-10">
-        <img class="mb-6" src="../assets/img_navbar/1.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/4.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/5.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/6.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/6.png" alt="">
-        <img class="mb-6" src="../assets/img_navbar/6.png" alt="">
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/4.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/5.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
       </div>
     </div>
   </div>

@@ -65,11 +65,6 @@ import finGroupIcon from './Icons/finGroupIcon.vue'
 import footerImgProduct from './Icons/footerImgProduct.vue';
 import footerImgService from './Icons/footerImgService.vue';
 
-const heightServicesIcon = ref('h-[260px]')
-const heightProductIcon = ref('h-[260px]')
-const isColorService = ref(false)
-const isColorProduct = ref(false)
-
 
 </script>
 
