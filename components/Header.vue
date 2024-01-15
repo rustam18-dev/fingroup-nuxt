@@ -16,17 +16,29 @@
           <li class="header_text mr-[50px]">Контакты</li>
         </ol>
         <button
-          class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px] ">Оставить
-          заявку</button>
+          class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px]"
+          @click="isModalApplication = true"
+        >
+          Оставить заявку
+        </button>
       </div>
     </div>
     <Sidebar @isSidebar="isSidebar = false" v-if="isSidebar"/>
   </div>
+  <UiModalApplication
+    v-if="isModalApplication"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    @close="isModalApplication = false"
+  />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 const isSidebar = ref(false)
+const isModalApplication = ref(true)
+
+
 </script>
 
 <style scoped>
