@@ -2,7 +2,7 @@
   <div class="bg-[#242424] flex flex-col justify-center items-center w-full">
 
     <div
-      class="flex flex-row flex-wrap md:flex-nowrap max-w-[1420px] w-full sm:p-8 p-2 sm:justify-between justify-start mb-6">
+      class=" container flex flex-row flex-wrap md:flex-nowrap max-w-[1420px] w-full sm:p-0 sm:py-8 p-2 sm:justify-between justify-start mb-6">
       <div class="flex flex-col gap-y-3 text-white sm:mb-0 mb-4 pl-[10px] pt-2">
         <finGroupIcon />
         <h2 class="text-[15px]">Таджикистан, г. Худжанд,
