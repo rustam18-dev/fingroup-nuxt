@@ -1,15 +1,15 @@
 <template>
   <div class="mt-[125px] relative z-10">
-    <div data-aos="fade-up">
+    <div >
       <h2 class="text-mainB text-[30px] lg:text-[45px]">Отрасли и немного статистики</h2>
       <p class="text-mainG text-[18px] font-normal lg:text-[26px] mt-[40px]">Все сотрудники сертифицированные специалисты</p>
     </div>
 
-    <div class="flex flex-wrap gap-4 justify-center lg:justify-between mt-[70px] cursor-pointer">
+    <div class="flex flex-wrap gap-4 justify-center lg:justify-center mt-[70px] cursor-pointer">
 
-      <div v-for="statistic in statistics" :key="statistic.id" data-aos="fade-right" class="flex flex-col justify-center items-center w-[340px]  md:w-[300px] h-[350px] rounded-[15px] bg-[#2C2C2C] lg:w-[325px]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
-        <p class="text-mainB text-[95px] font-semibold leading-[85px]" :style="{ transition: `all ${statistic.duration || 1}s ease` }">{{ animatedValue(statistic.id) }} <span v-if="statistic.id === 1" class="text-mainG -ml-[30px]">+</span></p>
-        <p class="text-mainG text-[35px] font-normal leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
+      <div v-for="statistic in statistics" :key="statistic.id"    class="block-width flex flex-col justify-center items-center w-[179px] sm:w-[290px] md:w-[300px] h-[245px] rounded-[15px] bg-[#2C2C2C] lg:w-[325px] lg:h-[300px] xl:w-[295px] 2xl:w-[335px]" :ref="`statistic-${statistic.id}`" :data-statistic-id="statistic.id">
+        <p class="text-mainB text-[60px] md:text-[95px] font-semibold leading-[85px]" :style="{ transition: `all ${statistic.duration || 1}s ease` }">{{ animatedValue(statistic.id) }} <span v-if="statistic.id === 1" class="text-mainG -ml-[23px]">+</span></p>
+        <p class="text-mainG text-[20px] md:text-[35px] font-normal leading-[25px] md:leading-[50px] text-center mt-[30px]">{{statistic.adjective}} <br><span class="text-mainB">{{ statistic.text }}</span></p>
       </div>
       
     </div>
@@ -83,6 +83,25 @@ const animateStatistic = (id, duration) => {
 [data-statistic-id] p {
   transition: all 1s ease;
 }
+
+@media screen and (max-width:375px) {
+  .block-width{
+    width: 159px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 320px) {
+    .block-width{
+      display: flex;
+      flex-wrap: wrap;
+      width: 132px;
+      height: 180px;
+    }
+  }
+}
 </style>
 
 
+<!-- data-aos="fade-up" -->
+<!-- data-aos="fade-right" -->

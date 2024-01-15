@@ -5,8 +5,8 @@
       <h4 class="text-mainG text-[20px] sm:text-[20px]">Компания Fin Group оказывает услуги</h4>
     </div>
     <div data-aos="fade-up"
-      class="flex flex-wrap gap-7 items-center justify-center h-auto bg-[#242424] rounded-[20px] px-[20px] py-[55px] 2xl:px-[80px]">
-      <div v-for="item of block" :key="item" data-aos="fade-up-left"
+      class="flex flex-wrap gap-7 items-center justify-center h-auto bg-[#242424] rounded-[20px] px-[20px] py-[20px] 2xl:px-[80px]">
+      <div  v-for="item of block" :key="item" data-aos="fade-up-left"
         class="flex flex-col w-[350px] h-[280px] border border-mainG rounded-[10px] group relative gap-[30px] sm:w-[40%] xl:w-[365px]">
         <div v-html="item.svg"></div>
         <p :id="'name_' + item.id" class="text-mainG text-[20px] font-normal text-center group-hover:-mt-[25px] sm:text-[20px] lg:text-[25px] px-[10px]">{{ item.name }}</p>
