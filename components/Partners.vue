@@ -5,16 +5,16 @@
       <h3 class="text-mainG text-[20px] lg:text-[26px] font-normal mt-[40px] pl-[20px]">Мы работаем только с известными проверенными
         брендами</h3>
     </div>
-    <div data-aos="fade-up" class="h-[350px] flex justify-center gap-6 py-[50px] px-[20px] bg-[#242424] rounded-[20px] overflow-hidden w-[380px] lg:w-[1400px] -mt-[70px] lg:mt-[100px]">
+    <div data-aos="fade-up" class="h-[350px] flex justify-center gap-6 py-[50px] px-[20px] bg-[#242424] rounded-[20px] overflow-hidden w-[380px] lg:w-[980px] xl:w-[1250px] lg:mt-[100px] sm:w-[730px] 2xl:w-[1400px]">
     <div class="carousel-inner flex justify-center items-center">
-      <img class="partners_img max-w-[220px] max-h-[220px] md:ml-[20px] lg:max-w-[300px] lg:max-h-[300px] lg:-ml-[20px] " src="../assets/img/img_partners/1c.png" alt="photo">
+      <img class="partners_img max-w-[220px] max-h-[220px] lg:max-w-[200px] lg:max-h-[200px] md:ml-[20px] xl:max-w-[300px] xl:max-h-[300px] xl:-ml-[20px] " src="../assets/img/img_partners/1c.png" alt="photo">
       <div class="lg:border-l-[1px] h-[200px] w-[250px] border-mainG">
-        <img class="partners_img max-w-[160px] max-h-[160px] lg:max-w-[300px] lg:max-h-[300px] md:mr-[90px] lg:pt-[100xp] lg:ml-[50px]" src="../assets/img/img_partners/sklad.png" alt="photo">
+        <img class="partners_img max-w-[160px] max-h-[160px] lg:ml-[40px] lg:mt-[20px] xl:max-w-[300px] xl:max-h-[300px] md:mr-[90px] xl:-mt-[20px] xl:ml-[50px]" src="../assets/img/img_partners/sklad.png" alt="photo">
       </div>
-      <div class=" lg:border-x-[1px] h-[200px] lg:ml-[100px] border-mainG">
-      <img class="partners_img max-w-[250px] max-h-[250px] lg:max-w-[235px] lg:pt-[30px] lg:max-h-[250px] lg:mx-[30px]" src="../assets/img/img_partners/bitrix.png" alt="photo">
+      <div class=" lg:border-x-[1px] h-[200px] xl:ml-[100px] border-mainG">
+      <img class="partners_img max-w-[250px] max-h-[250px] lg:mt-[25px] xl:max-w-[235px] xl:pt-[30px] xl:max-h-[250px] xl:mx-[30px]" src="../assets/img/img_partners/bitrix.png" alt="photo">
       </div>
-      <img class="partners_img max-w-[180px] max-h-[180px] -mt-[80px] lg:max-w-[300px] lg:max-h-[300px] lg:px-[10px] md:pt-[45px] pt-[50px] lg:-mt-[30px] lg:ml-[50px]" src="../assets/img/img_partners/mobic.png" alt="photo">
+      <img class="partners_img max-w-[180px] max-h-[180px] -mt-[80px] xl:max-w-[300px] xl:max-h-[300px] xl:px-[10px] md:pt-[45px] pt-[50px] lg:-mt-[30px] lg:ml-[50px]" src="../assets/img/img_partners/mobic.png" alt="photo">
     </div>
     <div class="carousel-inner lg:hidden flex justify-center items-center">
       <img class="partners_img max-w-[220px] max-h-[220px] md:ml-[20px] lg:max-w-[300px] lg:max-h-[300px]" src="../assets/img/img_partners/1c.png" alt="photo">
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:768px) {
   .carousel-inner {
   animation: scroll 10s linear infinite;
   align-items: center;
