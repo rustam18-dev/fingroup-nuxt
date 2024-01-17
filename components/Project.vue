@@ -1,26 +1,30 @@
 <template>
-  <div class="bg-[#242424] mt-[125px] rounded-[20px] relative z-10">
-    <h2 data-aos="fade-up" class="main_title ml-[3.5vw] pt-[20px] lg:pt-[36px]">Наши проекты</h2>
-    <div class="flex flex-wrap items-center justify-center  ">
-
-      <div data-aos="fade-down" :class="item.classblock" v-for="item of block" :key="item" class="relative mb-[54px] w-[80%]  lg:w-1/3  h-[409px]">
-        <img :id="'img_' + item.id"
-          class="absolute transition-all duration-300 linear w-[200px] group-hover:w-[200px] group-hover:opacity-0 lg:w-[300px]"
-          :src="item.img" alt="photo">
-        <img :id="'photo_' + item.id"
-          class="absolute object-contain transition duration-1000 w-[150px] lg:w-[190px] opacity-0 invisible group-hover:opacity-100 group-hover:visible"
-          :src="item.photo" alt="photo">
-        <p :id="'name_' + item.id"
-          class="text-mainG duration-500 md:max-w-[350px] xl:text-[20px] 2xl:text-[24px] font-normal text-center xl:w-[400px] 2xl:w-[450px] mt-[240px] group-hover:mt-[190px] w-[300px]">
-          {{ item.name }}</p>
-        <div
-          class="lg:w-[70%] w-[60%] h-[48px] text-[#fff] flex justify-center items-center lg:bottom-[10px] opacity-0 absolute group-hover:opacity-[1] bottom-[50px] duration-700">
-          <custom-button>Подробнее</custom-button>
-        </div>
+  <div class="flex flex-col">
+    <div class="mt-[100px]">
+      <h2    class="main_title lg:pt-[36px]">Наши проекты</h2>
+    </div>
+    <div class="bg-[#242424] mt-[125px] rounded-[20px] bottom-24 relative z-10">
+      <div class="flex flex-wrap items-center justify-center">
+  
+        <div data-aos="fade-down" :class="item.classblock" v-for="item of block" :key="item" class="relative mb-[54px] w-[80%] lg:w-1/3 h-[409px]">
+          <img :id="'img_' + item.id"
+            class="absolute transition-all duration-300 linear w-[200px] group-hover:w-[200px] group-hover:opacity-0 lg:w-[300px]"
+            :src="item.img" alt="photo">
+            <div class="line"></div>
+          <img :id="'photo_' + item.id"
+            class="absolute object-contain transition duration-1000 w-[150px] lg:w-[190px] opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            :src="item.photo" alt="photo">
+          <p :id="'name_' + item.id"
+            class="text-mainG duration-500 md:max-w-[350px] xl:text-[20px] 2xl:text-[24px] font-normal text-center xl:w-[400px] 2xl:w-[450px] mt-[240px] group-hover:mt-[190px] w-[300px]">
+            {{ item.name }}</p>
+          <div
+            class="lg:w-[70%] w-[60%] h-[48px] text-[#fff] flex justify-center items-center lg:bottom-[10px] opacity-0 absolute group-hover:opacity-[1] bottom-[50px] duration-700">
+            <custom-button>Подробнее</custom-button>
+          </div>
       </div>
-
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
@@ -40,8 +44,12 @@ const block = ref([
 </script>
 
 <style scoped>
+#img_1{
+  margin-top: 25px;
+}
 #img_2{
   margin-top: 30px;
+  border: 1px 0 1px 0 solid white;
 }
 #photo_2{
   margin-top: 30px;
@@ -82,6 +90,28 @@ const block = ref([
 
     }
 }
+@media screen and (max-width: 320px) {
+  #name_1,#name_2,#name_3{
+      font-size: 15px;
+      width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff; 
+    transition: all 0.3s ease;
+    margin-top: -40px;
+  }
+
+  .block:hover .line {
+    background-color: #fff
+  }
+}
 </style>
 
  
+<!-- data-aos="fade-up" -->
