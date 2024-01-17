@@ -26,9 +26,7 @@
 </template>
 
 <script setup>
-import { defineEmits } from 'vue';
-
-const emit = defineEmits();
+const emit = defineEmits(['isSidebar']);
 
 function closeModal(event) {
   if (event.target.classList.contains('overlay')) {
