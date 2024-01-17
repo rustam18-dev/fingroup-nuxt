@@ -25,7 +25,7 @@
     </div>
     <Sidebar @isSidebar="isSidebar = false" v-if="isSidebar"/>
   </div>
-  <UiModalApplication
+  <ModalApplication
     v-if="isModalApplication"
     data-aos="fade-up"
     data-aos-anchor-placement="top-center"
