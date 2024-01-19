@@ -2,7 +2,13 @@
 import { onMounted } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-onMounted(() => AOS.init());
+const close = () => {
+
+}
+onMounted(() =>
+    AOS.init()
+
+);
 useHead({
   title: 'FinGroup - автоматизация бизнес процессов!',
   meta: [
@@ -90,6 +96,7 @@ useHead({
 </script>
 
 <style>
+
 ::-webkit-scrollbar {
   background: #000;
   width: 0.7vw;

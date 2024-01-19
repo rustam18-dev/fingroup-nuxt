@@ -36,8 +36,15 @@
 <script setup>
 import { ref } from 'vue'
 const isSidebar = ref(false)
-const isModalApplication = ref(true)
+const isModalApplication = ref(false)
 
+watch(isModalApplication, (newVal) => {
+  if (newVal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+})
 
 </script>
 
