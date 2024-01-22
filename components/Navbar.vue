@@ -8,14 +8,10 @@
           <p class="navbar_title">Создание <span class="text-mainB">креативных</span> сайтов</p>
         </div>
       </div>
-      <div class="sm:w-full  w-[450px] mt-[40px] md:h-[50px] sm:h-[40px] h-[50px] overflow-hidden z-10 description_block text-mainG lg:text-[22px] md:text-[16px] sm:text-[13px] text-[17px]">
-        <p class="navbar_description text-left  linear-[40px] ">Определив основные объекты
-          диагностики, связываем финансовую диагностику.</p>
-        <p class="navbar_description text-left linear-[40px] ">Мы позволяем эффективно
-          выполнять работу и перейти на безбумажный документооборот.</p>
-        <p class="navbar_description text-left linear-[40px] ">С грамотно разработанным сайтом от
-          компанией FIN Group Вы сможете двигаться вперед.</p>
+      <div class="sm:w-full w-[450px] mt-[40px] h-[80px]  overflow-hidden z-10 text-mainG lg:text-[22px] md:text-[16px] sm:text-[13px] text-[17px]">
+        <span ref="description" class="max-w-[200px] w-full"></span>
       </div>
+
       <custom-button theme="light" class="mt-[43px]"><span class="px-[24px]">Подробнее</span></custom-button>
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden sm:flex hidden justify-between">
@@ -41,6 +37,19 @@
 </template>
 
 <script setup>
+import typer from '../composable/typer.js'
+
+const description = ref(null)
+
+onMounted(() => {
+  const words = [
+    "Определив основные объекты диагностики, связываем финансовую диагностику.",
+    "Мы позволяем эффективно выполнять работу и перейти на безбумажный документооборот.",
+    "С грамотно разработанным сайтом от компанией FIN Group Вы сможете двигаться вперед.",
+  ]
+
+  typer(description.value, words)
+})
 
 </script>
 
@@ -55,15 +64,6 @@
   animation-play-state: paused;
 }
 
-.description_block:hover .navbar_description {
-  animation-play-state: paused;
-}
-
-.navbar_description {
-  transition: all 2.5s;
-  animation-duration: 2.5s;
-  animation: navbar_description 17.5s infinite ease-in-out;
-}
 
 .top-block {
   transition: all 2s;
@@ -145,26 +145,4 @@
   }
 }
 
-@keyframes navbar_description {
-
-  0%,
-  33% {
-    animation-delay: 2.5s;
-    transform: translate(0px, 0%);
-  }
-
-  33% {
-    animation-delay: 2.5s;
-    transform: translate(0px, -100%);
-  }
-
-  66% {
-    animation-delay: 2.5s;
-    transform: translate(0px, -200%);
-  }
-
-  100% {
-    transform: translate(0px, 0%);
-  }
-}
 </style>
