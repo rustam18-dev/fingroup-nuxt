@@ -1,5 +1,5 @@
 <template>
-  <div class="back flex items-end max-w-[690px] w-auto max-h-[350px] h-full rounded-[20px] z-[50] cursor-pointer">
+  <div class="back flex items-end max-w-[690px] w-auto 2xl:max-h-[350px] xl:max-h-[280px] h-full rounded-[20px] z-[50] cursor-pointer">
     <div
       class="flex flex-col max-w-[55%] h-full items-start justify-between p-[15px] sm:p-[20px] xl:pt-[50px] lg:pb-[30px] lg:pl-[30px] relative">
       <h1 class="title">{{ title }}</h1>

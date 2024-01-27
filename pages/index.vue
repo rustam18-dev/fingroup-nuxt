@@ -40,12 +40,12 @@ useHead({
 
     <Service />
 
-    <div class="relative">
+    <!-- <div class="relative">
       <Employees />
       <div class="absolute -top-72 -right-[500px] abstrack_shape" />
       <div class="absolute -top-32 -right-[500px] abstrack_shape_shadow" />
       <div class="absolute -bottom-32  -left-[400px]  abstrack_shape_shadow2" />
-    </div>
+    </div> -->
 
     <div class="relative">
       <Industries />
