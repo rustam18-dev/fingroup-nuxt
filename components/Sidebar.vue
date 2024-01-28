@@ -13,19 +13,19 @@
       <div class="p-4">
         <ol class="flex flex-col items-end font-Montserrat gap-y-[25px] pr-[20px]">
           <NuxtLink to="/">
-            <li class="header_text">О компании</li>
+            <li @click="$emit('isSidebar');" class="header_text">О компании</li>
           </NuxtLink>
           <NuxtLink to="/service">
-            <li class="header_text">Услуги</li>
+            <li @click="$emit('isSidebar');" class="header_text">Услуги</li>
           </NuxtLink>
           <NuxtLink to="/projects">
-            <li class="header_text">Проекты</li>
+            <li @click="$emit('isSidebar');" class="header_text">Проекты</li>
           </NuxtLink>
           <NuxtLink to="/partners">
-            <li class="header_text">Партнеры</li>
+            <li @click="$emit('isSidebar');" class="header_text">Партнеры</li>
           </NuxtLink>
           <NuxtLink to="/contacts">
-            <li class="header_text">Контакты</li>
+            <li @click="$emit('isSidebar');" class="header_text">Контакты</li>
           </NuxtLink>
           <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px]"
             @click="isModalApplication = true">
