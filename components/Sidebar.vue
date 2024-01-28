@@ -2,7 +2,7 @@
   <div data-aos="fade-left" class="overlay" @click="closeModal($event)">
     <div class="bg-white w-[70%] h-screen absolute top-0 right-0 bottom-0">
       <div class="flex justify-between border-b border-[#D9D9D9] p-4">
-        <img src="../assets/svg/logo_black.png" alt="photo">
+        <img src="../assets/svg/logo_black.webp" alt="photo">
         <button @click="$emit('isSidebar')" class="lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(22,140,228,1)">
             <rect class="translate-x-[4px] translate-y-[4px] rotate-45" width="18" height="2" />
@@ -12,27 +12,50 @@
       </div>
       <div class="p-4">
         <ol class="flex flex-col items-end font-Montserrat gap-y-[25px] pr-[20px]">
-          <button class="sidebar_text">О компании</button>
-          <button class="sidebar_text">Услуги</button>
-          <button class="sidebar_text">Проекты</button>
-          <button class="sidebar_text">Продукты</button>
-          <button class="sidebar_text">Контакты</button>
-          <button class="sidebar_text">Оставить заявку</button>
+          <NuxtLink to="/">
+            <li @click="$emit('isSidebar');" class="header_text">О компании</li>
+          </NuxtLink>
+          <NuxtLink to="/service">
+            <li @click="$emit('isSidebar');" class="header_text">Услуги</li>
+          </NuxtLink>
+          <NuxtLink to="/projects">
+            <li @click="$emit('isSidebar');" class="header_text">Проекты</li>
+          </NuxtLink>
+          <NuxtLink to="/partners">
+            <li @click="$emit('isSidebar');" class="header_text">Партнеры</li>
+          </NuxtLink>
+          <NuxtLink to="/contacts">
+            <li @click="$emit('isSidebar');" class="header_text">Контакты</li>
+          </NuxtLink>
+          <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px]"
+            @click="isModalApplication = true">
+            Оставить заявку
+          </button>
         </ol>
       </div>
     </div>
-
+    <ModalApplication v-if="isModalApplication" data-aos="fade-up" data-aos-anchor-placement="top-center"
+    @close="isModalApplication = false" />
   </div>
+  
 </template>
 
 <script setup>
+import { ref } from 'vue'
 const emit = defineEmits(['isSidebar']);
-
+const isModalApplication = ref(false)
 function closeModal(event) {
   if (event.target.classList.contains('overlay')) {
     emit('isSidebar');
   }
 }
+watch(isModalApplication, (newVal) => {
+  if (newVal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+})
 </script>
 
 

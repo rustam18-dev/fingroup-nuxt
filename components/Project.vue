@@ -28,12 +28,12 @@
 </template>
 
 <script setup>
-import img1 from '../assets/img/image 44.png'
-import img2 from '../assets/img/есхата.png'
-import img3 from '../assets/img/image 45.png'
-import img4 from '../assets/img/image 45 (1).png'
-import img5 from '../assets/img/Aslpharm.png'
-import img6 from '../assets/img/AslpharmColor.png'
+import img1 from '../assets/img/image 44.webp'
+import img2 from '../assets/img/есхата.webp'
+import img3 from '../assets/img/image 45.webp'
+import img4 from '../assets/img/image 45 (1).webp'
+import img5 from '../assets/img/Aslpharm.webp'
+import img6 from '../assets/img/AslpharmColor.webp'
 import { ref } from 'vue'
 
 const block = ref([

@@ -25,10 +25,10 @@
 </template>
 
 <script setup>
-import img1 from '../assets/img/achievements1.png'
-import img2 from '../assets/img/achievements2.png'
-import img3 from '../assets/img/achievements3.png'
-import img4 from '../assets/img/achievements4.png'
+import img1 from '../assets/img/achievements1.webp'
+import img2 from '../assets/img/achievements2.webp'
+import img3 from '../assets/img/achievements3.webp'
+import img4 from '../assets/img/achievements4.webp'
 
 const achievements = ref([
   { id: 1, img: img1 },

@@ -5,7 +5,7 @@
       <h4 class="text-mainG text-[20px] sm:text-[20px]">Компания Fin Group оказывает услуги</h4>
     </div>
     <div data-aos="fade-up"
-      class="flex flex-wrap gap-7 items-center justify-center h-auto -mt-[35px] bg-[#242424] rounded-[20px] py-[20px] 2xl:px-[80px]">
+      class="flex flex-wrap gap-7 items-center justify-center h-auto -mt-[35px] bg-[#242424] rounded-[20px] py-[20px] lg:py-[40px] 2xl:px-[80px]">
       <div  v-for="item of block" :key="item" data-aos="fade-up-left"
         class="flex flex-col w-[350px] h-[280px] border border-mainG rounded-[10px] group relative gap-[30px] sm:w-[40%] xl:w-[365px]">
         <div v-html="item.svg"></div>

@@ -16,21 +16,21 @@
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden sm:flex hidden justify-between">
       <div class="w-[48%] flex flex-col justify-center items-end top-block z-10">
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/2.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/2.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/3.webp" alt="office" />
       </div>
 
       <div class="w-[48%] flex flex-col justify-center mt-24 items-end bottom-block z-10">
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/4.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/5.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
-        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.png" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/1.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/4.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/5.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.webp" alt="office" />
+        <nuxt-img class="mb-6 w-full" src="../assets/img_navbar/6.webp" alt="office" />
       </div>
     </div>
   </div>
