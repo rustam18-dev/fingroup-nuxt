@@ -7,7 +7,6 @@ const close = () => {
 }
 onMounted(() =>
     AOS.init()
-
 );
 useHead({
   title: 'FinGroup - автоматизация бизнес процессов!',
@@ -18,7 +17,7 @@ useHead({
     },
     {
       name: 'keywords',
-      content: 'fingroup, FinGroup, фингруп, Фин груп, создание сайтов в Таджикистане, создание сайтов в Худжанде, автоматизация бизнес-процессов в Таджикистане, автоматизация бизнес-процессов в Худжанде '
+      content: 'fingroup, FinGroup, фингруп, Фин груп, создание сайтов в Таджикистане, создание сайтов в Худжанде, создание и продвижение сайтов, автоматизация бизнес-процессов в Таджикистане, автоматизация бизнес-процессов в Худжанде '
     }
   ]
 })
@@ -27,7 +26,6 @@ useHead({
 <template>
   <div class="container mx-auto 2xl:px-[70px] relative px-[20px]">
     <Navbar data-aos="fade-down" />
-
     
     <div class="absolute top-20 -left-96 select-none">
       <img src="../assets/back_img/Cube.webp" class="-z-[1] w-[800px] h-[750px] object-contain" alt="">
@@ -49,8 +47,8 @@ useHead({
 
     <div class="relative">
       <Industries />
-      <NuxtImg format="webp" :src="'/back_img/tn-atom.png'" width="580px" height="580px"
-        class="absolute atom -top-10 -right-64" alt=""></NuxtImg>
+      <img src="../assets/back_img/tn-atom.webp" width="580px" height="580px"
+        class="absolute atom -top-10 -right-64" alt="">
       <div class="absolute atom_shadow top-16 -right-[155px]" />
     </div>
 
@@ -81,7 +79,7 @@ useHead({
 
     <div class="relative">
       <OurAchievements />
-      <img src="../assets/back_img/tn-atom.png" class="absolute -bottom-40 right-20 atom" alt="">
+      <img src="../assets/back_img/tn-atom.webp" class="absolute -bottom-40 right-20 atom" alt="">
       <div class="atom_shadow absolute -bottom-20 right-40" />
     </div>
 

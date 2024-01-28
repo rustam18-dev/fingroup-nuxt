@@ -6,7 +6,7 @@
       <custom-button class="mt-4 md:mt-0" theme="light"><span class="px-[40px] py-[20px]">НАПИШИТЕ НАМ</span></custom-button>
     </div>
     <div class="mr-[60px] hidden md:block">
-      <img src="./Icons/Questions.png" alt="photo">
+      <img src="./Icons/Questions.webp" alt="photo">
     </div>
   </div>
 </template>
