@@ -16,45 +16,53 @@
       <div class="lg:flex hidden">
         <ol class="flex items-center font-Montserrat xl:gap-x-[70px] gap-[30px]">
           <NuxtLink to="/">
-            <li class="header_text">О компании</li>
+            <li class="header_text" :style="{ color: isActive('') }">О компании</li>
           </NuxtLink>
           <NuxtLink to="/service">
-            <li class="header_text">Услуги</li>
+            <li class="header_text" :style="{ color: isActive('service') }">Услуги</li>
           </NuxtLink>
           <NuxtLink to="/projects">
-            <li class="header_text">Проекты</li>
+            <li class="header_text" :style="{ color: isActive('projects') }">Проекты</li>
           </NuxtLink>
           <NuxtLink to="/partners">
-            <li class="header_text">Партнеры</li>
+            <li class="header_text" :style="{ color: isActive('partners') }">Партнеры</li>
           </NuxtLink>
           <NuxtLink to="/contacts">
-            <li class="header_text mr-[50px]">Контакты</li>
+            <li class="header_text mr-[50px]" :style="{ color: isActive('contacts') }">Контакты</li>
           </NuxtLink>
         </ol>
         <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px]"
-          @click="isModalApplication = true">
+                @click="modalApplication.isOpenModalApplicationStore()">
           Оставить заявку
         </button>
       </div>
     </div>
     <Sidebar @isSidebar="isSidebar = false" v-if="isSidebar" />
   </div>
-  <ModalApplication v-if="isModalApplication" data-aos="fade-up" data-aos-anchor-placement="top-center"
-    @close="isModalApplication = false" />
+  <ModalApplication v-if="modalApplication.isModalApplication" data-aos="fade-up" data-aos-anchor-placement="top-center"
+    @close="modalApplication.isOpenModalApplicationStore()" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import {useModalApplication} from "~/store/ModalApplicationStore.js";
 const isSidebar = ref(false)
-const isModalApplication = ref(false)
+const route = useRoute()
+const modalApplication = useModalApplication()
 
-watch(isModalApplication, (newVal) => {
+const isActive = (item) => {
+  if (route.path === '/' + item) return '#168CE4'
+  return route.path === '/' + item ? '#168CE4' : ''
+}
+
+
+watch(() => modalApplication.isModalApplication, (newVal) => {
   if (newVal) {
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = 'auto';
   }
-})
+});
 
 </script>
 

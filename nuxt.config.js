@@ -24,7 +24,8 @@ export default defineNuxtConfig({
       }
     }],
     '@nuxt/image',
-    'nuxt-icons'
+    'nuxt-icons',
+    '@pinia/nuxt'
   ],
   image: {
     format: ['webp'],
@@ -59,7 +60,7 @@ export default defineNuxtConfig({
     easing: 'ease', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
   }
 })
 

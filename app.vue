@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/iconFinGroup.png' },
+  ],
+})
+</script>
+
 <template>
   <div>
    <Header />
