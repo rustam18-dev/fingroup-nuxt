@@ -95,19 +95,16 @@ const animateStatistic = (id, duration) => {
 
   @media screen and (min-width: 325px) {
     .block-width {
-      width: 132px;
+      width: 262px;
       height: 230px;
     }
   }
 
   @media screen and (min-width: 375px) {
     .block-width {
-      width: 159px;
+      padding: 15px 0;
+      width: 359px;
       height: 230px;
     }
   }
 }</style>
-
-
-<!-- data-aos="fade-up" -->
-<!-- data-aos="fade-right" -->

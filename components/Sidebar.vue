@@ -28,34 +28,24 @@
             <li @click="$emit('isSidebar');" class="header_text">Контакты</li>
           </NuxtLink>
           <button class="rounded-[50px] bg-[#168CE4] text-[#fff] text-[16px] font-semibold px-[24px] py-[11px] h-[48px]"
-            @click="isModalApplication = true">
+            @click="modalApplication.isOpenModalApplicationStore()">
             Оставить заявку
           </button>
         </ol>
       </div>
     </div>
-    <ModalApplication v-if="isModalApplication" data-aos="fade-up" data-aos-anchor-placement="top-center"
-    @close="isModalApplication = false" />
+    <ModalApplication v-if="modalApplication.isModalApplication" data-aos="fade-up" data-aos-anchor-placement="top-center"
+    @click="modalApplication.isCloseModalApplicationStore()" />
   </div>
   
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const emit = defineEmits(['isSidebar']);
-const isModalApplication = ref(false)
-function closeModal(event) {
-  if (event.target.classList.contains('overlay')) {
-    emit('isSidebar');
-  }
-}
-watch(isModalApplication, (newVal) => {
-  if (newVal) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = 'auto';
-  }
-})
+import {useModalApplication} from "~/store/ModalApplicationStore";
+defineEmits(['isSidebar']);
+
+const modalApplication = useModalApplication()
+
 </script>
 
 

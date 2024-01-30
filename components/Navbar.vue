@@ -1,7 +1,7 @@
 <template>
   <div class="text-white flex z-50 border-t-2">
     <div class="w-[60%] min-h-[800px] z-10">
-      <div class="xl:w-[580px] md:w-[400px] sm:w-[320px] w-[440px] mt-[220px] linear-[85px] xl:text-[60px] md:text-[40px] sm:text-[30px] text-[44px] ">
+      <div class="xl:w-[580px] md:w-[400px] sm:w-[320px] w-[420px] mt-[220px] linear-[85px] xl:text-[60px] md:text-[40px] sm:text-[30px] text-[35px]">
         <div class="uppercase font-[700] xl:h-[270px] md:h-[180px] sm:h-[135px] h-[210px] overflow-hidden title_block">
           <p class="navbar_title"><span class="text-mainB">Финансовая</span> диагностика и консультация</p>
           <p class="navbar_title">Автоматизация <span class="text-mainB">бизнес - процессов</span></p>
@@ -11,7 +11,6 @@
       <div class="sm:w-full w-[450px] mt-[40px] h-[80px]  overflow-hidden z-10 text-mainG lg:text-[22px] md:text-[16px] sm:text-[13px] text-[17px]">
         <span ref="description" class="max-w-[200px] w-full"></span>
       </div>
-
       <custom-button theme="light" class="mt-[43px]"><span class="px-[24px]">Подробнее</span></custom-button>
     </div>
     <div class="w-[40%] max-h-[800px] overflow-hidden sm:flex hidden justify-between">
